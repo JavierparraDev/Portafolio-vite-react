@@ -41,7 +41,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">J</span>
               </div>
-              <span className="text-xl font-bold gradient-text">Tu Nombre</span>
+              <span className="text-xl font-bold gradient-text">Javier Parra</span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 max-w-md">
               Desarrollador Full Stack apasionado por crear experiencias digitales únicas y funcionales.
@@ -100,9 +100,9 @@ const Footer = () => {
         {/* Línea divisoria */}
         <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-600 dark:text-gray-400 text-sm">
-              © {currentYear} Tu Nombre. Todos los derechos reservados.
-            </p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">
+          © {currentYear} Javier Parra. Todos los derechos reservados.
+        </p>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               Desarrollado con ❤️ usando React, TypeScript y Tailwind CSS
             </p>

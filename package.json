@@ -1,5 +1,5 @@
 {
-  "name": "portafolio-personal",
+  "name": "javier-parra-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -52,6 +52,6 @@
     "typescript",
     "vite"
   ],
-  "author": "Javier Parra ",
+  "author": "Javier Parra",
   "license": "MIT"
 }

@@ -42,7 +42,7 @@ const Home = () => {
                 className="text-4xl md:text-6xl lg:text-7xl font-bold"
               >
                 Hola, soy{' '}
-                <span className="gradient-text">Tu Nombre</span>
+                <span className="gradient-text">Javier Parra</span>
               </motion.h1>
               
               <motion.p

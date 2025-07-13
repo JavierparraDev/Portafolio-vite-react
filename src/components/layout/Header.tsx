@@ -42,7 +42,7 @@ const Header = () => {
             >
               <span className="text-white font-bold text-sm">J</span>
             </motion.div>
-            <span className="text-xl font-bold gradient-text">Tu Nombre</span>
+                            <span className="text-xl font-bold gradient-text">Javier Parra</span>
           </Link>
 
           {/* Desktop Navigation */}
