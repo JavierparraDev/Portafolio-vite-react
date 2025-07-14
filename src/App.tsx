@@ -3,6 +3,8 @@ import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
 import './App.css';
 
 function App() {
@@ -15,9 +17,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               {/* Aquí puedes agregar más rutas cuando crees las otras páginas */}
-              <Route path="/sobre-mi" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Página Sobre Mí - En desarrollo</h1></div>} />
-              <Route path="/proyectos" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Página Proyectos - En desarrollo</h1></div>} />
-              <Route path="/habilidades" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Página Habilidades - En desarrollo</h1></div>} />
+              <Route path="/sobre-mi" element={<About />} />
+              <Route path="/proyectos" element={<Projects />} />
+
               <Route path="/contacto" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Página Contacto - En desarrollo</h1></div>} />
             </Routes>
           </main>

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
@@ -8,26 +8,22 @@ const Footer = () => {
     {
       name: 'GitHub',
       icon: Github,
-      href: 'https://github.com/tu-usuario',
+      href: 'https://github.com/JavierparraDev',
       color: 'hover:text-gray-900 dark:hover:text-white'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      href: 'https://linkedin.com/in/tu-usuario',
+      href: 'https://www.linkedin.com/in/javierparradev/',
       color: 'hover:text-blue-600'
     },
-    {
-      name: 'Twitter',
-      icon: Twitter,
-      href: 'https://twitter.com/tu-usuario',
-      color: 'hover:text-blue-400'
-    },
+    
     {
       name: 'Email',
       icon: Mail,
-      href: 'mailto:tu-email@ejemplo.com',
-      color: 'hover:text-red-500'
+      href: 'mailto:javier00parra@gmail.com',
+      color: 'hover:text-red-500',
+      placeholder: 'javier00parra@gmail.com'
     }
   ];
 
@@ -43,9 +39,7 @@ const Footer = () => {
               </div>
               <span className="text-xl font-bold gradient-text">Javier Parra</span>
             </div>
-            <p className="text-gray-600 dark:text-gray-400 max-w-md">
-              Desarrollador Full Stack apasionado por crear experiencias digitales únicas y funcionales.
-            </p>
+            
           </div>
 
           {/* Enlaces rápidos */}
@@ -104,7 +98,7 @@ const Footer = () => {
           © {currentYear} Javier Parra. Todos los derechos reservados.
         </p>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              Desarrollado con ❤️ usando React, TypeScript y Tailwind CSS
+              Desarrollado con ❤️ y mucho ☕ por Javier Parra
             </p>
           </div>
         </div>
