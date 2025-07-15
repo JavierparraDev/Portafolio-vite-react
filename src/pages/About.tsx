@@ -130,8 +130,12 @@ const About = () => {
           >
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-lg">
-                  JP
+                <div className="w-32 h-32 rounded-full shadow-lg overflow-hidden">
+                  <img
+                    src="/javier-perfil.svg"
+                    alt="Javier Parra"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               
@@ -283,8 +287,12 @@ const About = () => {
                 className="text-center group"
                 variants={fadeInUp}
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full flex items-center justify-center text-white mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {value.icon}
+                <div className="w-16 h-16 rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                  <img
+                    src="/javier-perfil.svg"
+                    alt="Javier Parra"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
                   {value.title}

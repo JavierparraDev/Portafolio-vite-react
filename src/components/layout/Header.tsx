@@ -22,6 +22,13 @@ const Header = () => {
     document.documentElement.classList.toggle('dark');
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const navItems = [
     { name: 'Inicio', href: '/' },
     { name: 'Sobre mí', href: '/sobre-mi' },
@@ -34,14 +41,18 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" onClick={scrollToTop} className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="w-8 h-8 bg-gradient-to-r from-primary-600 to-purple-600 rounded-lg flex items-center justify-center"
+              className="w-8 h-8 rounded-lg overflow-hidden"
             >
-              <span className="text-white font-bold text-sm">J</span>
+              <img
+                src="/javier-perfil.svg"
+                alt="Javier Parra"
+                className="w-full h-full object-cover"
+              />
             </motion.div>
-                            <span className="text-xl font-bold gradient-text">Javier Parra</span>
+            <span className="text-xl font-bold gradient-text">Javier Parra</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -50,6 +61,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
+                onClick={scrollToTop}
                 className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
               >
                 {item.name}
@@ -91,7 +103,10 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    scrollToTop();
+                  }}
                   className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
                 >
                   {item.name}

@@ -28,9 +28,13 @@ const Home = () => {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="mx-auto w-32 h-32 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-2xl"
+              className="mx-auto w-32 h-32 rounded-full shadow-2xl overflow-hidden"
             >
-              J
+              <img
+                src="/javier-perfil.svg"
+                alt="Javier Parra"
+                className="w-full h-full object-cover"
+              />
             </motion.div>
 
             {/* Título principal */}
@@ -70,10 +74,15 @@ const Home = () => {
                 <ArrowDown className="w-5 h-5" />
               </Link>
               
-              <button className="btn-secondary flex items-center space-x-2 px-8 py-3 text-lg">
+              <a
+                href="/cv-personal-P.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary flex items-center space-x-2 px-8 py-3 text-lg"
+              >
                 <Download className="w-5 h-5" />
-                <span>Descargar CV</span>
-              </button>
+                <span>Ver CV</span>
+              </a>
             </motion.div>
 
             {/* Redes sociales */}
@@ -84,18 +93,20 @@ const Home = () => {
               className="flex justify-center space-x-6 pt-8"
             >
               <a
-                href="https://github.com/tu-usuario"
+                href="https://github.com/JavierparraDev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+                title="GitHub"
               >
                 <Github className="w-6 h-6 text-gray-700 dark:text-gray-300" />
               </a>
               <a
-                href="https://linkedin.com/in/tu-usuario"
+                href="https://linkedin.com/in/javierparradev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+                title="LinkedIn"
               >
                 <Linkedin className="w-6 h-6 text-blue-600" />
               </a>

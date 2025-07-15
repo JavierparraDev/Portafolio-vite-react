@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
               <Route path="/sobre-mi" element={<About />} />
               <Route path="/proyectos" element={<Projects />} />
 
-              <Route path="/contacto" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Página Contacto - En desarrollo</h1></div>} />
+              <Route path="/contacto" element={<Contact />} />
             </Routes>
           </main>
           <Footer />
