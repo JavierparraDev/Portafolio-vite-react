@@ -81,7 +81,7 @@ const Contact = () => {
         <meta name="description" content={t('contact.description')} />
       </Helmet>
 
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-b from-gray-900 to-gray-950 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>

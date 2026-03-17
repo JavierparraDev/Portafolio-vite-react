@@ -5,7 +5,6 @@ import {
   Globe, 
   Code, 
   Shield,
-  HardDrive,
   CheckCircle,
   ArrowRight,
   Layers,
@@ -23,6 +22,8 @@ interface CaseStudy {
   solutionKey: string;
   roleKey: string;
   techStack: string[];
+  badges?: string[];
+  featured?: boolean;
   impact: { metricKey: string; value: string }[];
   status: 'completed' | 'maintained';
 }
@@ -48,67 +49,76 @@ const Projects = () => {
     }
   };
 
-  const caseStudies: CaseStudy[] = [
-    {
-      id: 'web-development',
-      titleKey: 'projects.caseStudies.webDevelopment.title',
-      subtitleKey: 'projects.caseStudies.webDevelopment.subtitle',
-      icon: <Globe className="w-7 h-7" />,
-      iconColor: 'from-blue-500 to-cyan-500',
-      overviewKey: 'projects.caseStudies.webDevelopment.overview',
-      problemKey: 'projects.caseStudies.webDevelopment.problem',
-      solutionKey: 'projects.caseStudies.webDevelopment.solution',
-      roleKey: 'projects.caseStudies.webDevelopment.role',
-      techStack: ['React', 'Node.js', 'PostgreSQL', 'Figma', 'Docker'],
-      impact: [
-        { metricKey: 'projects.caseStudies.webDevelopment.impact.pageLoadTime', value: '< 2s' },
-        { metricKey: 'projects.caseStudies.webDevelopment.impact.seoScore', value: '95+' },
-        { metricKey: 'projects.caseStudies.webDevelopment.impact.clientSatisfaction', value: '100%' }
-      ],
-      status: 'maintained'
-    },
-    {
-      id: 'backup-automation',
-      titleKey: 'projects.caseStudies.backupAutomation.title',
-      subtitleKey: 'projects.caseStudies.backupAutomation.subtitle',
-      icon: <HardDrive className="w-7 h-7" />,
-      iconColor: 'from-green-500 to-emerald-500',
-      overviewKey: 'projects.caseStudies.backupAutomation.overview',
-      problemKey: 'projects.caseStudies.backupAutomation.problem',
-      solutionKey: 'projects.caseStudies.backupAutomation.solution',
-      roleKey: 'projects.caseStudies.backupAutomation.role',
-      techStack: ['PowerShell', 'Bash', 'PostgreSQL', 'Windows Server'],
-      impact: [
-        { metricKey: 'projects.caseStudies.backupAutomation.impact.backupTime', value: '85% reduction' },
-        { metricKey: 'projects.caseStudies.backupAutomation.impact.dataVerification', value: '100% automated' },
-        { metricKey: 'projects.caseStudies.backupAutomation.impact.recoveryTime', value: '< 15 min' }
-      ],
-      status: 'completed'
-    },
-    {
-      id: 'security-implementation',
-      titleKey: 'projects.caseStudies.securityImplementation.title',
-      subtitleKey: 'projects.caseStudies.securityImplementation.subtitle',
-      icon: <Shield className="w-7 h-7" />,
-      iconColor: 'from-purple-500 to-pink-500',
-      overviewKey: 'projects.caseStudies.securityImplementation.overview',
-      problemKey: 'projects.caseStudies.securityImplementation.problem',
-      solutionKey: 'projects.caseStudies.securityImplementation.solution',
-      roleKey: 'projects.caseStudies.securityImplementation.role',
-      techStack: ['Network Security', 'Firewall', 'Access Control', 'Compliance'],
-      impact: [
-        { metricKey: 'projects.caseStudies.securityImplementation.impact.securityIncidents', value: '0 post-implementation' },
-        { metricKey: 'projects.caseStudies.securityImplementation.impact.policyCompliance', value: '100%' },
-        { metricKey: 'projects.caseStudies.securityImplementation.impact.employeeTraining', value: '50+ trained' }
-      ],
-      status: 'completed'
-    }
-  ];
+const caseStudies: CaseStudy[] = [
+  {
+    id: 'usco-digiturno',
+    titleKey: 'caseStudies.uscoDigiturno.title',
+    subtitleKey: 'caseStudies.uscoDigiturno.subtitle',
+    icon: <Globe className="w-7 h-7" />,
+    iconColor: 'from-blue-500 to-cyan-500',
+    overviewKey: 'caseStudies.uscoDigiturno.overview',
+    problemKey: 'caseStudies.uscoDigiturno.problem',
+    solutionKey: 'caseStudies.uscoDigiturno.solution',
+    roleKey: 'caseStudies.uscoDigiturno.role',
+    techStack: ['TypeScript', 'Java', 'Spring Boot', 'MySQL', 'System Design'],
+    badges: ['System Design', 'Backend', 'Architecture'],
+    featured: false,
+    impact: [
+      { metricKey: 'caseStudies.uscoDigiturno.impact.processImprovement', value: '+60%' },
+      { metricKey: 'caseStudies.uscoDigiturno.impact.timeReduction', value: '-40%' },
+      { metricKey: 'caseStudies.uscoDigiturno.impact.dataVisibility', value: 'Real-time' },
+      { metricKey: 'caseStudies.uscoDigiturno.impact.operationalInsights', value: 'Analytics' }
+    ],
+    status: 'completed'
+  },
+  {
+    id: 'shopify-management',
+    titleKey: 'caseStudies.shopifyManagement.title',
+    subtitleKey: 'caseStudies.shopifyManagement.subtitle',
+    icon: <Globe className="w-7 h-7" />,
+    iconColor: 'from-green-500 to-emerald-500',
+    overviewKey: 'caseStudies.shopifyManagement.overview',
+    problemKey: 'caseStudies.shopifyManagement.problem',
+    solutionKey: 'caseStudies.shopifyManagement.solution',
+    roleKey: 'caseStudies.shopifyManagement.role',
+    techStack: ['Shopify', 'E-commerce', 'UX/UI', 'Conversion Optimization'],
+    badges: ['E-commerce', 'UX', 'Growth'],
+    featured: false,
+    impact: [
+      { metricKey: 'caseStudies.shopifyManagement.impact.conversionImprovement', value: '+' },
+      { metricKey: 'caseStudies.shopifyManagement.impact.userExperience', value: 'Improved UX' },
+      { metricKey: 'caseStudies.shopifyManagement.impact.performance', value: 'Faster Load' },
+      { metricKey: 'caseStudies.shopifyManagement.impact.branding', value: 'Rebranding' }
+    ],
+    status: 'completed'
+  },
+  {
+    id: 'ai-eye-analysis',
+    titleKey: 'caseStudies.aiEyeAnalysis.title',
+    subtitleKey: 'caseStudies.aiEyeAnalysis.subtitle',
+    icon: <Shield className="w-7 h-7" />,
+    iconColor: 'from-purple-500 to-pink-500',
+    overviewKey: 'caseStudies.aiEyeAnalysis.overview',
+    problemKey: 'caseStudies.aiEyeAnalysis.problem',
+    solutionKey: 'caseStudies.aiEyeAnalysis.solution',
+    roleKey: 'caseStudies.aiEyeAnalysis.role',
+    techStack: ['Python', 'YOLO', 'Deep Learning', 'Computer Vision', 'API Integration'],
+    badges: ['AI', 'Computer Vision', 'Deep Learning'],
+    featured: true, // 🔥 ESTE ES EL PROTAGONISTA
+    impact: [
+      { metricKey: 'caseStudies.aiEyeAnalysis.impact.realTimeAnalysis', value: 'Real-time' },
+      { metricKey: 'caseStudies.aiEyeAnalysis.impact.aiImplementation', value: '50K+ Images' },
+      { metricKey: 'caseStudies.aiEyeAnalysis.impact.medicalSupport', value: 'Diagnosis Support' },
+      { metricKey: 'caseStudies.aiEyeAnalysis.impact.innovation', value: 'AI System' }
+    ],
+    status: 'completed'
+  }
+];
 
   return (
     <div className="min-h-screen bg-gray-950">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gray-900 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-b from-gray-900 to-gray-950 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
@@ -133,7 +143,7 @@ const Projects = () => {
       </section>
 
       {/* Case Studies */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-gray-950 to-gray-900">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div
             variants={containerVariants}
@@ -157,6 +167,29 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex-1 min-w-0">
+                    {/* Featured Badge */}
+                    {project.featured && (
+                      <div className="mb-2">
+                        <span className="px-3 py-1 text-xs font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full inline-block">
+                          🔥 Featured Project
+                        </span>
+                      </div>
+                    )}
+                    
+                    {/* Badges */}
+                    {project.badges && (
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        {project.badges.map((badge) => (
+                          <span
+                            key={badge}
+                            className="px-2.5 py-0.5 text-xs bg-gray-800 border border-gray-700 text-gray-300 rounded-full"
+                          >
+                            {badge}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    
                     <div className="flex items-center gap-3 mb-1">
                       <h3 className="text-xl md:text-2xl font-bold text-white">
                         {t(project.titleKey)}
@@ -276,7 +309,7 @@ const Projects = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-gradient-to-t from-gray-950 to-gray-900">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
