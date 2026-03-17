@@ -90,20 +90,10 @@ colors: {
 
 ## 🌐 Despliegue
 
-### Vercel (Recomendado)
+### Vercel en su capa gratuita.
 1. Conecta tu repositorio a Vercel
 2. Vercel detectará automáticamente que es un proyecto de Vite
 3. ¡Listo! Tu portafolio estará en línea
-
-### Netlify
-1. Sube tu código a GitHub
-2. Conecta el repositorio a Netlify
-3. Configura el comando de build: `npm run build`
-4. Configura el directorio de publicación: `dist`
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request.
 
 ## 📄 Licencia
 
@@ -111,9 +101,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## 📞 Contacto
 
-- **Email**: tu-email@ejemplo.com
-- **LinkedIn**: [Tu Perfil](https://linkedin.com/in/tu-usuario)
-- **GitHub**: [@tu-usuario](https://github.com/tu-usuario)
+- **Email**: javier00parra@gmial.com
+- **LinkedIn**: [Javier M Parra]https://www.linkedin.com/in/javierparradev/
+- **GitHub**: [@JavierparraDev](https://github.com/JavierparraDev)
 
 ---
 

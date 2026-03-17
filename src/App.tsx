@@ -6,13 +6,14 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import './i18n/config';
 import './App.css';
 
 function App() {
   return (
     <HelmetProvider>
       <Router>
-        <div className="min-h-screen bg-white dark:bg-gray-900">
+        <div className="min-h-screen bg-gray-950 text-white">
           <Header />
           <main className="pt-16">
             <Routes>

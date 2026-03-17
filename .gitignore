@@ -22,3 +22,30 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# VS Code User Settings & Customizations
+.vscode/settings.json
+.vscode/keybindings.json
+.vscode/launch.json
+
+# Agent Skills & Custom Instructions
+.agents/
+.agent/
+.skills-lock.json
+skills-lock.json
+*.instructions.md
+*.prompt.md
+*.agent.md
+copilot-instructions.md
+*.instructions.*.md
+
+# OS-specific files
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# IDE & Editor caches
+.cache/
+.eslintcache
+.stylelintcache

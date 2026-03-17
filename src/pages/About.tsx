@@ -1,158 +1,153 @@
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { 
   Code, 
   Database, 
   GitBranch, 
-  Palette, 
-  Users, 
   Target, 
   TrendingUp,
   Zap,
   Globe,
-  Smartphone,
-  Server
+  Server,
+  Mail,
+  MapPin
 } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
+  const { t } = useTranslation();
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 }
+    }
   };
 
-  const staggerContainer = {
-    animate: {
-      transition: {
-        staggerChildren: 0.1
-      }
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5 }
     }
   };
 
   const skills = [
     {
-      category: "Frontend",
+      key: 'frontend',
       icon: <Code className="w-6 h-6" />,
-      technologies: ["React", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
+      technologies: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
       color: "from-blue-500 to-cyan-500"
     },
     {
-      category: "Backend",
+      key: 'backend',
       icon: <Server className="w-6 h-6" />,
-      technologies: ["Laravel", "PHP", "Node.js", "Express", "REST APIs"],
+      technologies: ["Node.js", "Express", "REST APIs", "PHP", "Laravel"],
       color: "from-green-500 to-emerald-500"
     },
     {
-      category: "Bases de Datos",
+      key: 'database',
       icon: <Database className="w-6 h-6" />,
-      technologies: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "SQLite"],
+      technologies: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
       color: "from-purple-500 to-pink-500"
     },
     {
-      category: "Herramientas",
+      key: 'tools',
       icon: <GitBranch className="w-6 h-6" />,
-      technologies: ["Git", "GitHub", "Figma", "VS Code", "Docker", "Postman"],
+      technologies: ["Git", "Docker", "Figma", "Postman", "VS Code"],
       color: "from-orange-500 to-red-500"
-    }
-  ];
-
-  const methodologies = [
-    {
-      title: "Metodologías Ágiles",
-      description: "Experiencia en Scrum y Kanban, participando en sprints, daily standups y retrospectivas.",
-      icon: <Target className="w-8 h-8" />
-    },
-    {
-      title: "Prototipado UX/UI",
-      description: "Creación de wireframes y prototipos en Figma, enfocado en la experiencia del usuario.",
-      icon: <Palette className="w-8 h-8" />
-    },
-    {
-      title: "Control de Versiones",
-      description: "Manejo avanzado de Git, colaboración en equipos y gestión de repositorios.",
-      icon: <GitBranch className="w-8 h-8" />
-    },
-    {
-      title: "Desarrollo Colaborativo",
-      description: "Trabajo en equipo, code reviews y comunicación efectiva con stakeholders.",
-      icon: <Users className="w-8 h-8" />
     }
   ];
 
   const values = [
     {
-      title: "Experiencia del Usuario",
-      description: "Priorizo la usabilidad y accesibilidad en cada proyecto que desarrollo.",
-      icon: <Smartphone className="w-6 h-6" />
+      key: 'userExperience',
+      icon: <Zap className="w-5 h-5" />
     },
     {
-      title: "Mejora Continua",
-      description: "Siempre aprendiendo nuevas tecnologías y mejores prácticas de desarrollo.",
-      icon: <TrendingUp className="w-6 h-6" />
+      key: 'continuousLearning',
+      icon: <TrendingUp className="w-5 h-5" />
     },
     {
-      title: "Adaptabilidad",
-      description: "Capacidad para adaptarme rápidamente a nuevos desafíos tecnológicos.",
-      icon: <Zap className="w-6 h-6" />
+      key: 'adaptability',
+      icon: <Target className="w-5 h-5" />
     },
     {
-      title: "Soluciones Completas",
-      description: "Enfoque en construir aplicaciones robustas y escalables desde el diseño hasta el despliegue.",
-      icon: <Globe className="w-6 h-6" />
+      key: 'endToEnd',
+      icon: <Globe className="w-5 h-5" />
     }
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-950">
+      <Helmet>
+        <title>{t('home.aboutTitle')} | Javier Parra - {t('hero.role')}</title>
+        <meta name="description" content={t('home.aboutSubtitle')} />
+      </Helmet>
+
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <section className="relative py-24 bg-gray-900 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        </div>
         
         <motion.div 
-          className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-          initial="initial"
-          animate="animate"
-          variants={staggerContainer}
+          className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8"
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
         >
-          <motion.div className="text-center mb-16" variants={fadeInUp}>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              Sobre <span className="gradient-text">Mí</span>
+          <motion.div className="text-center mb-16" variants={itemVariants}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              {t('home.aboutTitle')}
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Desarrollador Fullstack Jr. apasionado por crear soluciones digitales innovadoras 
-              y experiencias de usuario excepcionales.
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              {t('home.aboutSubtitle')}
             </p>
           </motion.div>
 
           {/* Profile Card */}
           <motion.div 
-            className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 max-w-4xl mx-auto"
-            variants={fadeInUp}
+            className="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 max-w-4xl mx-auto"
+            variants={itemVariants}
           >
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 rounded-full shadow-lg overflow-hidden">
-                  <img
-                    src="/javier-perfil.svg"
-                    alt="Javier Parra"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-50"></div>
+                  <div className="relative w-32 h-32 rounded-full overflow-hidden ring-2 ring-blue-500/50">
+                    <img
+                      src="/javier-perfil.svg"
+                      alt="Javier Parra"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
               
               <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                  Javier Parra
+                <h2 className="text-3xl font-bold text-white mb-2">
+                  {t('hero.title')}
                 </h2>
-                <h3 className="text-xl text-primary-600 dark:text-primary-400 mb-4">
-                  Desarrollador Fullstack Jr.
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                  Con experiencia en Laravel, React, Angular y bases de datos SQL/NoSQL. 
-                  He participado en proyectos reales construyendo soluciones completas, 
-                  aplicando metodologías ágiles, prototipado en Figma y control de versiones con Git. 
-                  Me destaco por mi enfoque en la experiencia del usuario, la mejora continua 
-                  y la capacidad para adaptarme a nuevos desafíos tecnológicos.
+                <p className="text-xl text-blue-400 font-medium mb-4">
+                  {t('hero.role')}
                 </p>
+                <p className="text-gray-400 text-lg leading-relaxed">
+                  {t('home.aboutDescription')}
+                </p>
+                <div className="flex items-center justify-center lg:justify-start gap-6 mt-6 text-gray-500">
+                  <span className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    {t('home.location')}
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <Mail className="w-4 h-4" />
+                    {t('home.availableForWork')}
+                  </span>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -160,45 +155,47 @@ const About = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div 
-            className="text-center mb-16"
-            initial="initial"
-            whileInView="animate"
+            className="text-center mb-12"
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            variants={fadeInUp}
+            variants={itemVariants}
           >
-            <h2 className="section-title">Tecnologías y Herramientas</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Stack tecnológico completo para el desarrollo de aplicaciones web modernas
+            <h2 className="text-3xl font-bold text-white mb-4">
+              {t('skills.title')}
+            </h2>
+            <p className="text-gray-400">
+              {t('skills.subtitle')}
             </p>
           </motion.div>
 
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-            initial="initial"
-            whileInView="animate"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            variants={staggerContainer}
+            variants={containerVariants}
           >
-            {skills.map((skill, index) => (
+            {skills.map((skill) => (
               <motion.div
-                key={index}
-                className="card group hover:scale-105 transition-transform duration-300"
-                variants={fadeInUp}
+                key={skill.key}
+                className="p-5 bg-gray-900/50 border border-gray-800 rounded-xl hover:border-gray-700 transition-all duration-300 group"
+                variants={itemVariants}
               >
-                <div className={`w-12 h-12 bg-gradient-to-r ${skill.color} rounded-lg flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-10 h-10 bg-gradient-to-r ${skill.color} rounded-lg flex items-center justify-center text-white mb-3 group-hover:scale-110 transition-transform duration-300`}>
                   {skill.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
-                  {skill.category}
+                <h3 className="text-lg font-semibold text-white mb-3">
+                  {t(`skills.${skill.key}`)}
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5">
                   {skill.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium"
+                      className="px-2 py-1 bg-gray-800 text-gray-400 text-xs rounded-md"
                     >
                       {tech}
                     </span>
@@ -210,95 +207,45 @@ const About = () => {
         </div>
       </section>
 
-      {/* Methodologies Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            className="text-center mb-16"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            <h2 className="section-title">Metodologías y Procesos</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Enfoque profesional en el desarrollo de software con metodologías probadas
-            </p>
-          </motion.div>
-
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 gap-8"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-          >
-            {methodologies.map((methodology, index) => (
-              <motion.div
-                key={index}
-                className="card group hover:shadow-xl transition-all duration-300"
-                variants={fadeInUp}
-              >
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-primary-600 to-purple-600 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
-                    {methodology.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-                      {methodology.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      {methodology.description}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
       {/* Values Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gray-900">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div 
-            className="text-center mb-16"
-            initial="initial"
-            whileInView="animate"
+            className="text-center mb-12"
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            variants={fadeInUp}
+            variants={itemVariants}
           >
-            <h2 className="section-title">Mi Enfoque</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Valores y principios que guían mi trabajo como desarrollador
+            <h2 className="text-3xl font-bold text-white mb-4">
+              {t('approach.title')}
+            </h2>
+            <p className="text-gray-400">
+              {t('approach.subtitle')}
             </p>
           </motion.div>
 
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-            initial="initial"
-            whileInView="animate"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            variants={staggerContainer}
+            variants={containerVariants}
           >
-            {values.map((value, index) => (
+            {values.map((value) => (
               <motion.div
-                key={index}
-                className="text-center group"
-                variants={fadeInUp}
+                key={value.key}
+                className="p-5 bg-gray-800/30 border border-gray-800 rounded-xl hover:border-blue-500/30 transition-all duration-300 group"
+                variants={itemVariants}
               >
-                <div className="w-16 h-16 rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 overflow-hidden">
-                  <img
-                    src="/javier-perfil.svg"
-                    alt="Javier Parra"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 mb-3 group-hover:scale-110 transition-transform duration-300">
+                  {value.icon}
                 </div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
-                  {value.title}
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  {t(`approach.${value.key}`)}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  {value.description}
+                <p className="text-gray-400 text-sm">
+                  {t(`approach.${value.key}Desc`)}
                 </p>
               </motion.div>
             ))}
@@ -307,32 +254,32 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-purple-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-20 bg-gray-900">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
-            initial="initial"
-            whileInView="animate"
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            variants={fadeInUp}
+            variants={itemVariants}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              ¿Listo para trabajar juntos?
+            <h2 className="text-3xl font-bold text-white mb-4">
+              {t('contact.letsConnect')}
             </h2>
-            <p className="text-xl text-primary-100 mb-8">
-              Estoy siempre abierto a nuevos proyectos y oportunidades de colaboración
+            <p className="text-gray-400 mb-8">
+              {t('contact.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contacto"
-                className="btn-primary bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold"
+                className="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25"
               >
-                Contáctame
+                {t('contact.title')}
               </a>
               <a
                 href="/proyectos"
-                className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600 px-8 py-3 text-lg font-semibold"
+                className="px-8 py-3.5 bg-gray-800 border border-gray-700 hover:border-gray-600 text-white font-semibold rounded-lg transition-all duration-300"
               >
-                Ver Proyectos
+                {t('projects.title')}
               </a>
             </div>
           </motion.div>
@@ -342,4 +289,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

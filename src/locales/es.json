@@ -1,0 +1,134 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "viewAll": "Ver Todo",
+    "learnMore": "Saber Más",
+    "clickToCopy": "(clic para copiar)"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "work": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Hola, soy Javier Parra",
+    "role": "Ingeniero de Software",
+    "description": "Construyo aplicaciones web y sistemas enfocados en arquitectura limpia e impacto real. Transformando procesos complejos en soluciones de software confiables.",
+    "viewProjects": "Ver Proyectos",
+    "contactMe": "Contáctame",
+    "downloadCV": "Descargar CV",
+    "scrollDown": "Bajar"
+  },
+  "home": {
+    "aboutTitle": "Sobre Mí",
+    "aboutSubtitle": "Ingeniero de software creando sistemas escalables y aplicaciones impulsadas por datos.",
+    "aboutDescription": "Soy un ingeniero de software basado en Colombia enfocado en construir sistemas confiables y aplicaciones web que resuelven problemas reales. Disfruto analizando sistemas complejos, mejorando procesos y transformando ideas en software funcional.",
+    "location": "Colombia",
+    "availableForWork": "Disponible para trabajar"
+  },
+  "skills": {
+    "title": "Stack Tecnológico",
+    "subtitle": "Tecnologías con las que trabajo para construir aplicaciones modernas",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Bases de Datos",
+    "tools": "Herramientas"
+  },
+  "approach": {
+    "title": "Mi Enfoque",
+    "subtitle": "Valores y principios que guían mi trabajo",
+    "userExperience": "Experiencia de Usuario",
+    "userExperienceDesc": "Priorizo la usabilidad y accesibilidad en cada proyecto que construyo.",
+    "continuousLearning": "Aprendizaje Continuo",
+    "continuousLearningDesc": "Siempre aprendiendo nuevas tecnologías y mejores prácticas de desarrollo.",
+    "adaptability": "Adaptabilidad",
+    "adaptabilityDesc": "Me adapto rápidamente a nuevos desafíos y requisitos tecnológicos.",
+    "endToEnd": "Soluciones End-to-End",
+    "endToEndDesc": "Enfoque en construir aplicaciones robustas y escalables desde el diseño hasta el despliegue."
+  },
+  "projects": {
+    "title": "Mi Trabajo",
+    "subtitle": "Proyectos reales resolviendo problemas reales. Cada caso de estudio muestra el desafío, solución e impacto medible.",
+    "theProblem": "El Problema",
+    "theSolution": "La Solución",
+    "myRole": "Mi Rol",
+    "techStack": "Tech Stack",
+    "impact": "Impacto y Resultados",
+    "completed": "Completado",
+    "inProduction": "En Producción",
+    "cta": {
+      "title": "¿Te interesa trabajar juntos?",
+      "description": "Estoy disponible para nuevas oportunidades. Discutamos cómo puedo ayudar a tu equipo.",
+      "getInTouch": "Contáctame",
+      "viewGithub": "Ver GitHub"
+    },
+    "caseStudies": {
+      "webDevelopment": {
+        "title": "Plataformas Web Institucionales",
+        "subtitle": "Desarrollo web end-to-end para clientes corporativos",
+        "overview": "Diseñé, desarrollé e implementé múltiples sitios web institucionales con APIs integradas, optimización SEO y sistemas de gestión de contenido.",
+        "problem": "Los clientes necesitaban sitios web modernos y rápidos que pudieran ser fácilmente actualizados por personal no técnico mientras mantenían altos rankings en buscadores.",
+        "solution": "Construí sitios web responsivos usando frameworks modernos con integración CMS personalizada, implementé renderizado del lado del servidor para SEO y desplegué con pipelines CI/CD automatizados.",
+        "role": "Desarrollador full-stack responsable del diseño, desarrollo, despliegue y entrenamiento al cliente. Lideré desde la recolección de requisitos hasta la entrega final.",
+        "impact": {
+          "pageLoadTime": "Tiempo de Carga",
+          "seoScore": "Puntuación SEO",
+          "clientSatisfaction": "Satisfacción del Cliente"
+        }
+      },
+      "backupAutomation": {
+        "title": "Automatización de Backups de Sistemas Contables",
+        "subtitle": "Solución de backup automatizado para datos financieros críticos",
+        "overview": "Desarrollé un sistema de backup automatizado para software contable asegurando integridad de datos y capacidades de recuperación ante desastres.",
+        "problem": "Los procesos manuales de backup consumían mucho tiempo, eran propensos a errores y carecían de verificación. El riesgo de pérdida de datos era inaceptable para sistemas financieros.",
+        "solution": "Creé scripts personalizados de PowerShell/Bash con programación automatizada, verificaciones de integridad y logging completo. Implementé almacenamiento cifrado fuera del sitio.",
+        "role": "Desarrollador único - diseñé arquitectura, escribí scripts, configuré programación y establecí procedimientos de recuperación.",
+        "impact": {
+          "backupTime": "Tiempo de Backup",
+          "dataVerification": "Verificación de Datos",
+          "recoveryTime": "Tiempo de Recuperación"
+        }
+      },
+      "securityImplementation": {
+        "title": "Seguridad de Red Corporativa",
+        "subtitle": "Infraestructura de seguridad para red empresarial",
+        "overview": "Diseñé e implementé políticas de seguridad comprehensivas e infraestructura para protección de red corporativa.",
+        "problem": "La red carecía de políticas de seguridad documentadas, exponiendo a la organización a filtraciones de datos y riesgos de cumplimiento.",
+        "solution": "Realicé auditoría de seguridad, implementé reglas de firewall, establecí controles de acceso, creé documentación de seguridad y entrené al personal en mejores prácticas.",
+        "role": "Ingeniero de seguridad - realicé evaluación, diseñé políticas, configuré infraestructura y deliver training.",
+        "impact": {
+          "securityIncidents": "Incidentes de Seguridad",
+          "policyCompliance": "Cumplimiento de Políticas",
+          "employeeTraining": "Empleados Entrenados"
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "¿Tienes un proyecto en mente? Discutamos cómo puedo ayudarte.",
+    "letsConnect": "Conectemos",
+    "description": "Actualmente estoy disponible para nuevas oportunidades. Si tienes una pregunta o simplemente quieres saludar, ¡haré mi mejor esfuerzo para responderte!",
+    "directContact": "Contacto Directo",
+    "socialLinks": "Enlaces Sociales",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo",
+      "emailPlaceholder": "tu@correo.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "sendMessage": "Enviar Mensaje",
+      "messageSent": "¡Mensaje Enviado!"
+    }
+  },
+  "footer": {
+    "role": "Ingeniero de Software basado en Colombia",
+    "quickLinks": "Enlaces Rápidos",
+    "connect": "Conectar",
+    "copyright": "Todos los derechos reservados.",
+    "builtWith": "Construido con",
+    "andLotsOf": "y mucho"
+  }
+}
