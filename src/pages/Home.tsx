@@ -56,7 +56,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Nuevo diseño con dark theme + accent */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gray-950 overflow-hidden">
+      <section className="relative min-h-screen bg-gray-950 overflow-hidden flex flex-col justify-center pt-12 pb-24">
         {/* Background effects */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -74,7 +74,7 @@ const Home = () => {
             {/* Avatar con glow effect */}
             <motion.div
               variants={itemVariants}
-              className="mx-auto mb-10 relative"
+              className="mx-auto  mb-8 relative"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-50 animate-pulse"></div>
               <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden ring-2 ring-blue-500/50">
@@ -191,7 +191,7 @@ const Home = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-5 left-1/2 -translate-x-1/2"
         >
           <button
             onClick={() => scrollToSection('about')}
@@ -204,7 +204,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-gray-900">
+      <section id="about" className="pt-40 pb-24 bg-gradient-to-b from-gray-950 to-gray-900">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}

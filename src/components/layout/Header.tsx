@@ -52,8 +52,9 @@ const Header = () => {
               <img
                 src="/javier-perfil.svg"
                 alt="Javier Parra"
-                className="w-full h-full object-cover"
-              />
+                className="w-full h-full rounded-full object-cover"
+               /> 
+               
             </motion.div>
             <span className="text-xl font-bold text-white">Javier Parra</span>
           </Link>
