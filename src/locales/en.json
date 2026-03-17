@@ -1,0 +1,134 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "clickToCopy": "(click to copy)"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm Javier Parra",
+    "role": "Software Engineer",
+    "description": "I build web applications and systems focused on clean architecture and real-world impact. Transforming complex processes into reliable software solutions.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me",
+    "downloadCV": "Download CV",
+    "scrollDown": "Scroll down"
+  },
+  "home": {
+    "aboutTitle": "About Me",
+    "aboutSubtitle": "Software Engineer building scalable web systems and data-driven applications.",
+    "aboutDescription": "I'm a software engineer based in Colombia focused on building reliable systems and web applications that solve real problems. I enjoy analyzing complex systems, improving processes, and transforming ideas into functional software.",
+    "location": "Colombia",
+    "availableForWork": "Available for work"
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "subtitle": "Technologies I work with to build modern applications",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "tools": "Tools"
+  },
+  "approach": {
+    "title": "My Approach",
+    "subtitle": "Values and principles that guide my work",
+    "userExperience": "User Experience",
+    "userExperienceDesc": "I prioritize usability and accessibility in every project I build.",
+    "continuousLearning": "Continuous Learning",
+    "continuousLearningDesc": "Always learning new technologies and development best practices.",
+    "adaptability": "Adaptability",
+    "adaptabilityDesc": "Quickly adapt to new technological challenges and requirements.",
+    "endToEnd": "End-to-End Solutions",
+    "endToEndDesc": "Focus on building robust, scalable applications from design to deployment."
+  },
+  "projects": {
+    "title": "My Work",
+    "subtitle": "Real projects solving real problems. Each case study shows the challenge, solution, and measurable impact.",
+    "theProblem": "The Problem",
+    "theSolution": "The Solution",
+    "myRole": "My Role",
+    "techStack": "Tech Stack",
+    "impact": "Impact & Results",
+    "completed": "Completed",
+    "inProduction": "In Production",
+    "cta": {
+      "title": "Interested in working together?",
+      "description": "I'm available for new opportunities. Let's discuss how I can help your team.",
+      "getInTouch": "Get In Touch",
+      "viewGithub": "View GitHub"
+    },
+    "caseStudies": {
+      "webDevelopment": {
+        "title": "Institutional Web Platforms",
+        "subtitle": "End-to-end web development for corporate clients",
+        "overview": "Designed, developed, and deployed multiple institutional websites with integrated APIs, SEO optimization, and content management systems.",
+        "problem": "Clients needed modern, fast-loading websites that could be easily updated by non-technical staff while maintaining high search engine rankings.",
+        "solution": "Built responsive websites using modern frameworks with custom CMS integration, implemented server-side rendering for SEO, and deployed with automated CI/CD pipelines.",
+        "role": "Full-stack developer responsible for design, development, deployment, and client training. Led requirements gathering through final delivery.",
+        "impact": {
+          "pageLoadTime": "Page Load Time",
+          "seoScore": "SEO Score",
+          "clientSatisfaction": "Client Satisfaction"
+        }
+      },
+      "backupAutomation": {
+        "title": "Accounting Systems Backup Automation",
+        "subtitle": "Automated backup solution for critical financial data",
+        "overview": "Developed automated backup system for accounting software ensuring data integrity and disaster recovery capabilities.",
+        "problem": "Manual backup processes were time-consuming, error-prone, and lacked verification. Data loss risk was unacceptable for financial systems.",
+        "solution": "Created custom PowerShell/Bash scripts with automated scheduling, integrity verification checks, and comprehensive logging. Implemented encrypted off-site storage.",
+        "role": "Solo developer - designed architecture, wrote scripts, configured scheduling, and established recovery procedures.",
+        "impact": {
+          "backupTime": "Backup Time",
+          "dataVerification": "Data Verification",
+          "recoveryTime": "Recovery Time"
+        }
+      },
+      "securityImplementation": {
+        "title": "Corporate Network Security",
+        "subtitle": "Security infrastructure for enterprise network",
+        "overview": "Designed and implemented comprehensive security policies and infrastructure for corporate network protection.",
+        "problem": "Network lacked documented security policies, exposing the organization to data breaches and compliance risks.",
+        "solution": "Conducted security audit, implemented firewall rules, established access controls, created security documentation, and trained staff on best practices.",
+        "role": "Security engineer - performed assessment, designed policies, configured infrastructure, and delivered training.",
+        "impact": {
+          "securityIncidents": "Security Incidents",
+          "policyCompliance": "Policy Compliance",
+          "employeeTraining": "Employee Training"
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let's discuss how I can help.",
+    "letsConnect": "Let's Connect",
+    "description": "I'm currently available for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "directContact": "Direct Contact",
+    "socialLinks": "Social Links",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "sendMessage": "Send Message",
+      "messageSent": "Message Sent!"
+    }
+  },
+  "footer": {
+    "role": "Software Engineer based in Colombia",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "copyright": "All rights reserved.",
+    "builtWith": "Built with",
+    "andLotsOf": "and lots of"
+  }
+}
