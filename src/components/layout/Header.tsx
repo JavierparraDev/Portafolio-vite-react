@@ -36,7 +36,9 @@ const Header = () => {
     { name: t('nav.home'), href: '/' },
     { name: t('nav.about'), href: '/sobre-mi' },
     { name: t('nav.work'), href: '/proyectos' },
+    { name: t('nav.experience'), href: '/experiencia' },
     { name: t('nav.contact'), href: '/contacto' },
+    
   ];
 
   return (

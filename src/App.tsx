@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 import './i18n/config';
 import './App.css';
@@ -18,10 +19,9 @@ function App() {
           <main className="pt-16">
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* Aquí puedes agregar más rutas cuando crees las otras páginas */}
               <Route path="/sobre-mi" element={<About />} />
+              <Route path="/experiencia" element={<Experience />} />
               <Route path="/proyectos" element={<Projects />} />
-
               <Route path="/contacto" element={<Contact />} />
             </Routes>
           </main>

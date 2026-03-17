@@ -1,134 +1,233 @@
 {
   "common": {
     "loading": "Cargando...",
-    "viewAll": "Ver Todo",
-    "learnMore": "Saber Más",
-    "clickToCopy": "(clic para copiar)"
+    "viewAll": "Ver todo",
+    "learnMore": "Ver más",
+    "clickToCopy": "(haz clic para copiar)"
   },
   "nav": {
     "home": "Inicio",
-    "about": "Sobre Mí",
+    "about": "Sobre mí",
     "work": "Proyectos",
+    "experience": "Experiencia",
     "contact": "Contacto"
   },
   "hero": {
     "title": "Hola, soy Javier Parra",
-    "role": "Ingeniero de Software",
-    "description": "Construyo aplicaciones web y sistemas enfocados en arquitectura limpia e impacto real. Transformando procesos complejos en soluciones de software confiables.",
-    "viewProjects": "Ver Proyectos",
-    "contactMe": "Contáctame",
+    "role": "Desarrollador de Software",
+    "description": "Ayudo a empresas y equipos a optimizar procesos mediante aplicaciones web y automatizaciones. Construyo soluciones escalables, eficientes y enfocadas en resultados reales.",
+    "viewProjects": "Ver proyectos",
+    "contactMe": "Trabajemos juntos",
     "downloadCV": "Descargar CV",
-    "scrollDown": "Bajar"
+    "scrollDown": "Explorar"
   },
   "home": {
-    "aboutTitle": "Sobre Mí",
-    "aboutSubtitle": "Ingeniero de software creando sistemas escalables y aplicaciones impulsadas por datos.",
-    "aboutDescription": "Soy un ingeniero de software basado en Colombia enfocado en construir sistemas confiables y aplicaciones web que resuelven problemas reales. Disfruto analizando sistemas complejos, mejorando procesos y transformando ideas en software funcional.",
+    "aboutTitle": "Sobre mí",
+    "aboutSubtitle": "Desarrollador enfocado en crear soluciones web modernas y escalables.",
+    "aboutDescription": "Soy desarrollador de software en Colombia con experiencia construyendo aplicaciones web, APIs y automatizaciones. Disfruto analizar problemas, optimizar procesos y convertir ideas en soluciones reales utilizando tecnologías como React, Laravel, Django y Docker.",
     "location": "Colombia",
     "availableForWork": "Disponible para trabajar"
   },
   "skills": {
-    "title": "Stack Tecnológico",
-    "subtitle": "Tecnologías con las que trabajo para construir aplicaciones modernas",
+    "title": "Tecnologías",
+    "subtitle": "Herramientas y tecnologías que utilizo para construir aplicaciones",
     "frontend": "Frontend",
     "backend": "Backend",
-    "database": "Bases de Datos",
+    "database": "Bases de datos",
     "tools": "Herramientas"
   },
   "approach": {
-    "title": "Mi Enfoque",
-    "subtitle": "Valores y principios que guían mi trabajo",
-    "userExperience": "Experiencia de Usuario",
-    "userExperienceDesc": "Priorizo la usabilidad y accesibilidad en cada proyecto que construyo.",
-    "continuousLearning": "Aprendizaje Continuo",
-    "continuousLearningDesc": "Siempre aprendiendo nuevas tecnologías y mejores prácticas de desarrollo.",
+    "title": "Cómo trabajo",
+    "subtitle": "Principios que guían mi desarrollo",
+    "userExperience": "Experiencia de usuario",
+    "userExperienceDesc": "Construyo interfaces claras, intuitivas y centradas en el usuario.",
+    "continuousLearning": "Aprendizaje continuo",
+    "continuousLearningDesc": "Siempre estoy aprendiendo nuevas herramientas y mejores prácticas.",
     "adaptability": "Adaptabilidad",
-    "adaptabilityDesc": "Me adapto rápidamente a nuevos desafíos y requisitos tecnológicos.",
-    "endToEnd": "Soluciones End-to-End",
-    "endToEndDesc": "Enfoque en construir aplicaciones robustas y escalables desde el diseño hasta el despliegue."
+    "adaptabilityDesc": "Me adapto rápidamente a nuevos retos y tecnologías.",
+    "endToEnd": "Soluciones completas",
+    "endToEndDesc": "Desarrollo soluciones completas desde la idea hasta el despliegue."
   },
   "projects": {
-    "title": "Mi Trabajo",
-    "subtitle": "Proyectos reales resolviendo problemas reales. Cada caso de estudio muestra el desafío, solución e impacto medible.",
-    "theProblem": "El Problema",
-    "theSolution": "La Solución",
-    "myRole": "Mi Rol",
-    "techStack": "Tech Stack",
-    "impact": "Impacto y Resultados",
-    "completed": "Completado",
-    "inProduction": "En Producción",
+    "title": "Proyectos",
+    "subtitle": "Proyectos reales enfocados en resolver problemas concretos.",
+    "theProblem": "Problema",
+    "theSolution": "Solución",
+    "myRole": "Mi rol",
+    "techStack": "Tecnologías",
+    "impact": "Resultados",
+    "completed": "Finalizado",
+    "inProduction": "En producción",
     "cta": {
-      "title": "¿Te interesa trabajar juntos?",
-      "description": "Estoy disponible para nuevas oportunidades. Discutamos cómo puedo ayudar a tu equipo.",
+      "title": "¿Te interesa trabajar conmigo?",
+      "description": "Estoy abierto a nuevas oportunidades y colaboraciones.",
       "getInTouch": "Contáctame",
       "viewGithub": "Ver GitHub"
+    }
+  },
+  "caseStudies": {
+    "uscoDigiturno": {
+      "title": "USCO Digiturno",
+      "subtitle": "Sistema de gestión de turnos y control operativo en entorno universitario",
+      "overview": "Diseñé e implementé un sistema interno para la gestión de turnos en la judicatura de la Universidad Surcolombiana, centralizando el control de asistencia, registro de estudiantes y análisis operativo en tiempo real.",
+      "problem": "El proceso era manual, desorganizado y sin trazabilidad, generando errores en el control de asistencia, pérdida de información y baja eficiencia en la gestión de turnos.",
+      "solution": "Desarrollé una aplicación web interna desplegada en red local que permite gestionar turnos, registrar estudiantes y monitorear asistencia en tiempo real. Implementé un sistema de parametrización y métricas para identificar horas pico, carga operativa y optimizar la asignación de turnos.",
+      "role": "Full-stack developer responsable de todo el ciclo de vida del proyecto: levantamiento de requerimientos, diseño de arquitectura, desarrollo, despliegue y documentación.",
+      "impact": {
+        "processImprovement": "+60% mejora en organización de turnos",
+        "timeReduction": "-40% reducción en procesos manuales",
+        "dataVisibility": "Control y trazabilidad en tiempo real",
+        "operationalInsights": "Identificación de horas pico y carga operativa"
+      }
     },
-    "caseStudies": {
-      "webDevelopment": {
-        "title": "Plataformas Web Institucionales",
-        "subtitle": "Desarrollo web end-to-end para clientes corporativos",
-        "overview": "Diseñé, desarrollé e implementé múltiples sitios web institucionales con APIs integradas, optimización SEO y sistemas de gestión de contenido.",
-        "problem": "Los clientes necesitaban sitios web modernos y rápidos que pudieran ser fácilmente actualizados por personal no técnico mientras mantenían altos rankings en buscadores.",
-        "solution": "Construí sitios web responsivos usando frameworks modernos con integración CMS personalizada, implementé renderizado del lado del servidor para SEO y desplegué con pipelines CI/CD automatizados.",
-        "role": "Desarrollador full-stack responsable del diseño, desarrollo, despliegue y entrenamiento al cliente. Lideré desde la recolección de requisitos hasta la entrega final.",
-        "impact": {
-          "pageLoadTime": "Tiempo de Carga",
-          "seoScore": "Puntuación SEO",
-          "clientSatisfaction": "Satisfacción del Cliente"
-        }
-      },
-      "backupAutomation": {
-        "title": "Automatización de Backups de Sistemas Contables",
-        "subtitle": "Solución de backup automatizado para datos financieros críticos",
-        "overview": "Desarrollé un sistema de backup automatizado para software contable asegurando integridad de datos y capacidades de recuperación ante desastres.",
-        "problem": "Los procesos manuales de backup consumían mucho tiempo, eran propensos a errores y carecían de verificación. El riesgo de pérdida de datos era inaceptable para sistemas financieros.",
-        "solution": "Creé scripts personalizados de PowerShell/Bash con programación automatizada, verificaciones de integridad y logging completo. Implementé almacenamiento cifrado fuera del sitio.",
-        "role": "Desarrollador único - diseñé arquitectura, escribí scripts, configuré programación y establecí procedimientos de recuperación.",
-        "impact": {
-          "backupTime": "Tiempo de Backup",
-          "dataVerification": "Verificación de Datos",
-          "recoveryTime": "Tiempo de Recuperación"
-        }
-      },
-      "securityImplementation": {
-        "title": "Seguridad de Red Corporativa",
-        "subtitle": "Infraestructura de seguridad para red empresarial",
-        "overview": "Diseñé e implementé políticas de seguridad comprehensivas e infraestructura para protección de red corporativa.",
-        "problem": "La red carecía de políticas de seguridad documentadas, exponiendo a la organización a filtraciones de datos y riesgos de cumplimiento.",
-        "solution": "Realicé auditoría de seguridad, implementé reglas de firewall, establecí controles de acceso, creé documentación de seguridad y entrené al personal en mejores prácticas.",
-        "role": "Ingeniero de seguridad - realicé evaluación, diseñé políticas, configuré infraestructura y deliver training.",
-        "impact": {
-          "securityIncidents": "Incidentes de Seguridad",
-          "policyCompliance": "Cumplimiento de Políticas",
-          "employeeTraining": "Empleados Entrenados"
-        }
+    "shopifyManagement": {
+      "title": "Optimización de tiendas Shopify",
+      "subtitle": "Mejora de rendimiento y conversión en e-commerce (dropshipping)",
+      "overview": "Optimicé dos tiendas Shopify en el mercado colombiano, enfocándome en mejorar la experiencia de usuario, estructura visual y métricas de conversión.",
+      "problem": "Las tiendas presentaban baja tasa de conversión, diseño poco optimizado y una experiencia de usuario deficiente que afectaba directamente las ventas.",
+      "solution": "Rediseñé la interfaz y la arquitectura de navegación, integré plugins estratégicos y optimicé elementos clave del funnel de conversión. Ajusté métricas de rendimiento para mejorar tiempos de carga y experiencia general.",
+      "role": "Responsable de la optimización técnica y visual, implementación de mejoras y análisis de métricas orientadas a conversión.",
+      "impact": {
+        "conversionImprovement": "Incremento en tasa de conversión",
+        "userExperience": "Mejora significativa en experiencia de usuario",
+        "performance": "Optimización de tiempos de carga",
+        "branding": "Rediseño visual alineado a identidad de marca"
+      }
+    },
+    "aiEyeAnalysis": {
+      "title": "Sistema de análisis ocular con inteligencia artificial",
+      "subtitle": "Diagnóstico asistido mediante visión artificial y modelos de deep learning",
+      "overview": "Desarrollé un sistema de análisis basado en inteligencia artificial utilizando un dataset de más de 50,000 imágenes de enfermedades oculares, capaz de evaluar el estado de la córnea en tiempo real.",
+      "problem": "El diagnóstico de enfermedades oculares requiere análisis especializados que no siempre están disponibles de forma inmediata, limitando la detección temprana.",
+      "solution": "Entrené un modelo de visión artificial utilizando YOLO con más de 1M de parámetros, integrando DeepSeek como API para procesamiento de datos. Desarrollé una aplicación que captura imágenes en tiempo real y genera predicciones junto con recomendaciones para el cuidado ocular.",
+      "role": "Desarrollador e investigador responsable del procesamiento de datos, entrenamiento del modelo, integración de inteligencia artificial y desarrollo de la aplicación completa.",
+      "impact": {
+        "realTimeAnalysis": "Detección y análisis en tiempo real",
+        "aiImplementation": "Modelo entrenado con +50,000 imágenes",
+        "medicalSupport": "Apoyo a diagnóstico temprano",
+        "innovation": "Integración de visión artificial y APIs de IA"
       }
     }
   },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Un recorrido a través de roles impactantes en desarrollo de sistemas, optimización de procesos y transformación digital.",
+    "cta": {
+      "title": "¿Listo para trabajar juntos?",
+      "description": "Hablemos sobre cómo puedo contribuir al éxito de tu equipo.",
+      "getInTouch": "Ponte en Contacto",
+      "viewProjects": "Ver Más Proyectos"
+    },
+    "jobs": [
+      {
+        "company": "Comfamiliar Huila",
+        "role": "Analista de Procesos (Jr.)",
+        "period": "Sep 2025 – Mar 2026",
+        "duration": "7 meses",
+        "location": "Neiva, Colombia",
+        "featured": true,
+        "description": "Lideré la documentación y optimización de procesos organizacionales complejos, combinando análisis de sistemas, metodologías ágiles y benchmarking estratégico para mejorar la eficiencia operativa y la toma de decisiones.",
+        "achievements": [
+          "Entregué 34 documentaciones complejas de procesos (145 entregables) con 100% de aprobación ejecutiva",
+          "Implementé Scrum across 5 fases y 8 sprints, asegurando entrega estructurada y alineación con stakeholders",
+          "Realicé análisis comparativo de 12 programas académicos (MIT, Stanford, Andes), identificando 85 brechas críticas",
+          "Prioricé 48 mejores prácticas utilizando marcos MoSCoW y ROI"
+        ],
+        "tech": [
+          { "label": "Metodologías", "items": ["Scrum", "Agile", "MoSCoW", "ROI"] },
+          { "label": "Análisis", "items": ["Modelado de Procesos", "Benchmarking", "Pensamiento Sistémico"] },
+          { "label": "Herramientas", "items": ["Jira", "Herramientas Documentación", "Excel"] }
+        ]
+      },
+      {
+        "company": "Universidad Surcolombiana",
+        "role": "Desarrollador de Software Pasante (Digiturno)",
+        "period": "Feb 2025 – Jul 2025",
+        "duration": "6 meses",
+        "location": "Neiva, Colombia",
+        "description": "Diseñé e implementé un sistema digital de gestión de turnos (Digiturno) para optimizar flujo de servicio, registro de asistencia y visibilidad operativa en entorno judicial universitario.",
+        "achievements": [
+          "Construí un sistema de gestión de turnos mejorando flujo de servicio y gestión de usuarios",
+          "Desarrollé módulo de registro de asistencia para monitoreo de personal",
+          "Generé reportes analíticos para toma de decisiones operativa",
+          "Reduje procesos manuales y mejoré organización del servicio"
+        ],
+        "tech": [
+          { "label": "Frontend", "items": ["React", "TypeScript"] },
+          { "label": "Backend", "items": ["Java", "Spring Boot"] },
+          { "label": "Base de Datos", "items": ["MySQL"] },
+          { "label": "Conceptos", "items": ["Diseño de Sistemas", "Datos en Tiempo Real"] }
+        ]
+      },
+      {
+        "company": "Comfamiliar Huila",
+        "role": "Analista de Sistemas y Procesos (Jr. Developer)",
+        "period": "Aug 2025 – Dec 2025",
+        "duration": "5 meses",
+        "location": "Neiva, Colombia",
+        "description": "Analicé y modernizé sistemas legacy, mejorando integridad de datos, experiencia de usuario y flujos de trabajo internos mediante documentación técnica estructurada y colaboración entre equipos.",
+        "achievements": [
+          "Diagnostiqué systems legacy identificando fallos estructurales en módulos críticos",
+          "Mejoré integridad y consistencia de datos en sistemas operacionales clave",
+          "Documenté procesos de modernización y mejoras de sistema",
+          "Colaboré con equipos multidisciplinarios para rediseñar UX y reducir tiempos de acceso"
+        ],
+        "tech": [
+          { "label": "Backend", "items": ["PHP", "Laravel"] },
+          { "label": "Base de Datos", "items": ["MySQL"] },
+          { "label": "Conceptos", "items": ["Sistemas Legacy", "Integridad de Datos", "Refactorización de Sistemas"] }
+        ]
+      },
+      {
+        "company": "Biomédica S.A.S",
+        "role": "Ingeniero de Sistemas & Soporte",
+        "period": "Mar 2024 – Nov 2024",
+        "duration": "8 meses",
+        "location": "Neiva, Colombia",
+        "description": "Trabajé en seguridad informática, organización de infraestructura e integridad de datos, implementando sistemas de backup automatizados y soportando plataformas digitales internas.",
+        "achievements": [
+          "Diseñé sistema de backup automatizado para datos financieros sensibles",
+          "Mejoré integridad, confidencialidad y disponibilidad de datos",
+          "Supporté implementación de prácticas de ciberseguridad",
+          "Organicé infraestructura de red interna y cableado estructurado",
+          "Gestioné y actualicé sitios web institucionales"
+        ],
+        "tech": [
+          { "label": "Infraestructura", "items": ["Redes", "Cableado Estructurado"] },
+          { "label": "Seguridad", "items": ["Backups", "Protección de Datos"] },
+          { "label": "Herramientas", "items": ["CMS Web", "DevOps Básico"] }
+        ]
+      }
+    ]
+  },
+  "checkExperience": {
+    "viewDetails": "Ver detalles",
+    "hideDetails": "Ocultar detalles"
+  },
   "contact": {
-    "title": "Contáctame",
-    "subtitle": "¿Tienes un proyecto en mente? Discutamos cómo puedo ayudarte.",
+    "title": "Contacto",
+    "subtitle": "¿Tienes una idea o proyecto? Hablemos.",
     "letsConnect": "Conectemos",
-    "description": "Actualmente estoy disponible para nuevas oportunidades. Si tienes una pregunta o simplemente quieres saludar, ¡haré mi mejor esfuerzo para responderte!",
-    "directContact": "Contacto Directo",
-    "socialLinks": "Enlaces Sociales",
+    "description": "Actualmente estoy disponible para nuevas oportunidades. Si tienes un proyecto, una idea o simplemente quieres saludar, no dudes en escribirme.",
+    "directContact": "Contacto directo",
+    "socialLinks": "Redes",
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
       "email": "Correo",
-      "emailPlaceholder": "tu@correo.com",
+      "emailPlaceholder": "tu@email.com",
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntame sobre tu proyecto...",
-      "sendMessage": "Enviar Mensaje",
-      "messageSent": "¡Mensaje Enviado!"
+      "sendMessage": "Enviar mensaje",
+      "messageSent": "Mensaje enviado"
     }
   },
   "footer": {
-    "role": "Ingeniero de Software basado en Colombia",
-    "quickLinks": "Enlaces Rápidos",
+    "role": "Desarrollador de software en Colombia",
+    "quickLinks": "Enlaces",
     "connect": "Conectar",
     "copyright": "Todos los derechos reservados.",
-    "builtWith": "Construido con",
-    "andLotsOf": "y mucho"
+    "builtWith": "Hecho con",
+    "andLotsOf": "y mucho café"
   }
 }

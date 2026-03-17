@@ -88,7 +88,7 @@ const About = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative py-24 bg-gray-900 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-b from-gray-900 to-gray-950 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
@@ -155,7 +155,7 @@ const About = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-gray-950 to-gray-900">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div 
             className="text-center mb-12"
@@ -208,7 +208,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-900">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div 
             className="text-center mb-12"
@@ -254,7 +254,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-gradient-to-t from-gray-950 to-gray-900">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial="hidden"
