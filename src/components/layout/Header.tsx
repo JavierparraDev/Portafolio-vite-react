@@ -11,11 +11,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    const stored = localStorage.getItem('darkMode');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDarkMode = stored !== null ? stored === 'true' : prefersDark;
     setIsDark(isDarkMode);
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-    }
+    document.documentElement.classList.toggle('dark', isDarkMode);
   }, []);
 
   const toggleDarkMode = () => {
@@ -37,12 +37,11 @@ const Header = () => {
     { name: t('nav.about'), href: '/sobre-mi' },
     { name: t('nav.work'), href: '/proyectos' },
     { name: t('nav.experience'), href: '/experiencia' },
-    { name: t('nav.contact'), href: '/contacto' },
-    
+    { name: t('nav.contact'), href: '/contacto' }
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gray-950/90 backdrop-blur-md border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-950/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -52,13 +51,13 @@ const Header = () => {
               className="w-8 h-8 rounded-lg overflow-hidden"
             >
               <img
-                src="/javier-perfil.svg"
+                src="/javier-parra.png"
                 alt="Javier Parra"
                 className="w-full h-full rounded-full object-cover"
                /> 
                
             </motion.div>
-            <span className="text-xl font-bold text-white">Javier Parra</span>
+            <span className="text-xl font-bold text-gray-900 dark:text-white">Javier Parra</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -68,7 +67,7 @@ const Header = () => {
                 key={item.name}
                 to={item.href}
                 onClick={scrollToTop}
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-200 font-medium"
+                className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </Link>
@@ -81,8 +80,9 @@ const Header = () => {
             
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-gray-800/80 border border-gray-700 hover:border-gray-600 text-gray-400 hover:text-white transition-colors duration-200"
+              className="p-2 rounded-lg bg-gray-100 border border-gray-300 hover:border-gray-400 text-gray-600 hover:text-gray-900 dark:bg-gray-800/80 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
               aria-label="Toggle dark mode"
+              aria-pressed={isDark}
             >
               {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
@@ -90,8 +90,9 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-lg bg-gray-800/80 border border-gray-700 hover:border-gray-600 text-gray-400 hover:text-white transition-colors duration-200"
+              className="md:hidden p-2 rounded-lg bg-gray-100 border border-gray-300 hover:border-gray-400 text-gray-600 hover:text-gray-900 dark:bg-gray-800/80 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200"
               aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -104,7 +105,7 @@ const Header = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden py-4 border-t border-gray-800"
+            className="md:hidden py-4 border-t border-gray-200 dark:border-gray-800"
           >
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
@@ -115,7 +116,7 @@ const Header = () => {
                     setIsMenuOpen(false);
                     scrollToTop();
                   }}
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-200 font-medium"
+                  className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
                 >
                   {item.name}
                 </Link>

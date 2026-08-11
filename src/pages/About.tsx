@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { 
   Code, 
   Database, 
@@ -81,14 +82,14 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-950">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       <Helmet>
         <title>{t('home.aboutTitle')} | Javier Parra - {t('hero.role')}</title>
         <meta name="description" content={t('home.aboutSubtitle')} />
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-gray-900 to-gray-950 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-b from-gray-100 to-gray-50 dark:from-gray-900 dark:to-gray-950 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
@@ -101,17 +102,17 @@ const About = () => {
           variants={containerVariants}
         >
           <motion.div className="text-center mb-16" variants={itemVariants}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               {t('home.aboutTitle')}
             </h1>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
               {t('home.aboutSubtitle')}
             </p>
           </motion.div>
 
           {/* Profile Card */}
           <motion.div 
-            className="bg-gray-800/50 border border-gray-700 rounded-2xl p-8 max-w-4xl mx-auto"
+            className="bg-white border border-gray-200 dark:bg-gray-800/50 dark:border-gray-700 rounded-2xl p-8 max-w-4xl mx-auto"
             variants={itemVariants}
           >
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
@@ -120,7 +121,7 @@ const About = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-50"></div>
                   <div className="relative w-32 h-32 rounded-full overflow-hidden ring-2 ring-blue-500/50">
                     <img
-                      src="/javier-perfil.svg"
+                      src="/javier-parra.png"
                       alt="Javier Parra"
                       className="w-full h-full object-cover"
                     />
@@ -129,13 +130,13 @@ const About = () => {
               </div>
               
               <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-3xl font-bold text-white mb-2">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
                   {t('hero.title')}
                 </h2>
-                <p className="text-xl text-blue-400 font-medium mb-4">
+                <p className="text-xl text-blue-600 dark:text-blue-400 font-medium mb-4">
                   {t('hero.role')}
                 </p>
-                <p className="text-gray-400 text-lg leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
                   {t('home.aboutDescription')}
                 </p>
                 <div className="flex items-center justify-center lg:justify-start gap-6 mt-6 text-gray-500">
@@ -155,7 +156,7 @@ const About = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-950 to-gray-900">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div 
             className="text-center mb-12"
@@ -164,10 +165,10 @@ const About = () => {
             viewport={{ once: true }}
             variants={itemVariants}
           >
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               {t('skills.title')}
             </h2>
-            <p className="text-gray-400">
+            <p className="text-gray-600 dark:text-gray-400">
               {t('skills.subtitle')}
             </p>
           </motion.div>
@@ -182,20 +183,20 @@ const About = () => {
             {skills.map((skill) => (
               <motion.div
                 key={skill.key}
-                className="p-5 bg-gray-900/50 border border-gray-800 rounded-xl hover:border-gray-700 transition-all duration-300 group"
+                className="p-5 bg-white border border-gray-200 rounded-xl hover:border-gray-300 dark:bg-gray-900/50 dark:border-gray-800 dark:hover:border-gray-700 transition-all duration-300 group"
                 variants={itemVariants}
               >
                 <div className={`w-10 h-10 bg-gradient-to-r ${skill.color} rounded-lg flex items-center justify-center text-white mb-3 group-hover:scale-110 transition-transform duration-300`}>
                   {skill.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-3">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
                   {t(`skills.${skill.key}`)}
                 </h3>
                 <div className="flex flex-wrap gap-1.5">
                   {skill.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-2 py-1 bg-gray-800 text-gray-400 text-xs rounded-md"
+                      className="px-2 py-1 bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400 text-xs rounded-md"
                     >
                       {tech}
                     </span>
@@ -208,7 +209,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-900">
+      <section className="py-20 bg-gradient-to-b from-gray-100 to-gray-100 dark:from-gray-900 dark:to-gray-900">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div 
             className="text-center mb-12"
@@ -217,10 +218,10 @@ const About = () => {
             viewport={{ once: true }}
             variants={itemVariants}
           >
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               {t('approach.title')}
             </h2>
-            <p className="text-gray-400">
+            <p className="text-gray-600 dark:text-gray-400">
               {t('approach.subtitle')}
             </p>
           </motion.div>
@@ -235,16 +236,16 @@ const About = () => {
             {values.map((value) => (
               <motion.div
                 key={value.key}
-                className="p-5 bg-gray-800/30 border border-gray-800 rounded-xl hover:border-blue-500/30 transition-all duration-300 group"
+                className="p-5 bg-white border border-gray-200 rounded-xl hover:border-blue-500/50 dark:bg-gray-800/30 dark:border-gray-800 dark:hover:border-blue-500/30 transition-all duration-300 group"
                 variants={itemVariants}
               >
-                <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 mb-3 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-3 group-hover:scale-110 transition-transform duration-300">
                   {value.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                   {t(`approach.${value.key}`)}
                 </h3>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
                   {t(`approach.${value.key}Desc`)}
                 </p>
               </motion.div>
@@ -254,7 +255,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-t from-gray-950 to-gray-900">
+      <section className="py-20 bg-gradient-to-t from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial="hidden"
@@ -262,25 +263,25 @@ const About = () => {
             viewport={{ once: true }}
             variants={itemVariants}
           >
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               {t('contact.letsConnect')}
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-gray-600 dark:text-gray-400 mb-8">
               {t('contact.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contacto"
+              <Link
+                to="/contacto"
                 className="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25"
               >
                 {t('contact.title')}
-              </a>
-              <a
-                href="/proyectos"
-                className="px-8 py-3.5 bg-gray-800 border border-gray-700 hover:border-gray-600 text-white font-semibold rounded-lg transition-all duration-300"
+              </Link>
+              <Link
+                to="/proyectos"
+                className="px-8 py-3.5 bg-gray-100 border border-gray-300 hover:border-gray-400 text-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-white font-semibold rounded-lg transition-all duration-300"
               >
                 {t('projects.title')}
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

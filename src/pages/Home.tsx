@@ -56,7 +56,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Nuevo diseño con dark theme + accent */}
-      <section className="relative min-h-screen bg-gray-950 overflow-hidden flex flex-col justify-center pt-12 pb-24">
+      <section className="relative min-h-screen bg-gray-50 dark:bg-gray-950 overflow-hidden flex flex-col justify-center pt-12 pb-24">
         {/* Background effects */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -79,7 +79,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-50 animate-pulse"></div>
               <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden ring-2 ring-blue-500/50">
                 <img
-                  src="/javier-perfil.svg"
+                  src="/javier-parra.png"
                   alt="Javier Parra"
                   className="w-full h-full object-cover"
                 />
@@ -89,7 +89,7 @@ const Home = () => {
             {/* Nombre */}
             <motion.h1
               variants={itemVariants}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight"
             >
               {t('hero.title')}
             </motion.h1>
@@ -97,7 +97,7 @@ const Home = () => {
             {/* Rol */}
             <motion.p
               variants={itemVariants}
-              className="text-xl md:text-2xl text-blue-400 font-medium mb-6"
+              className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium mb-6"
             >
               {t('hero.role')}
             </motion.p>
@@ -105,7 +105,7 @@ const Home = () => {
             {/* What I do - Diferenciación */}
             <motion.p
               variants={itemVariants}
-              className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+              className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
             >
               {t('hero.description')}
             </motion.p>
@@ -118,7 +118,7 @@ const Home = () => {
               {techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="px-4 py-1.5 bg-gray-800/80 border border-gray-700 text-gray-300 text-sm rounded-full backdrop-blur-sm"
+                  className="px-4 py-1.5 bg-gray-100 border border-gray-300 text-gray-700 text-sm rounded-full dark:bg-gray-800/80 dark:border-gray-700 dark:text-gray-300 backdrop-blur-sm"
                 >
                   {tech}
                 </span>
@@ -142,17 +142,17 @@ const Home = () => {
               
               <Link
                 to="/contacto"
-                className="group px-8 py-3.5 bg-gray-800/80 border border-gray-700 hover:border-gray-600 text-white font-semibold rounded-lg transition-all duration-300 flex items-center gap-2"
+                className="group px-8 py-3.5 bg-gray-100 border border-gray-300 hover:border-gray-400 text-gray-900 dark:bg-gray-800/80 dark:border-gray-700 dark:hover:border-gray-600 dark:text-white font-semibold rounded-lg transition-all duration-300 flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
                 {t('hero.contactMe')}
               </Link>
               
               <a
-                href="/cv-personal-P.pdf"
+                href="/cv-javierdev.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3.5 bg-transparent border border-gray-700 hover:border-gray-500 text-gray-300 hover:text-white font-semibold rounded-lg transition-all duration-300 flex items-center gap-2"
+                className="px-8 py-3.5 bg-transparent border border-gray-300 hover:border-gray-500 text-gray-700 hover:text-gray-900 dark:border-gray-700 dark:hover:border-gray-500 dark:text-gray-300 dark:hover:text-white font-semibold rounded-lg transition-all duration-300 flex items-center gap-2"
               >
                 <Download className="w-4 h-4" />
                 {t('hero.downloadCV')}
@@ -168,19 +168,19 @@ const Home = () => {
                 href="https://github.com/JavierparraDev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-gray-800/80 border border-gray-700 hover:border-blue-500/50 hover:bg-gray-800 transition-all duration-300 group"
+                className="p-3 rounded-lg bg-gray-100 border border-gray-300 hover:border-blue-500/50 hover:bg-gray-200 dark:bg-gray-800/80 dark:border-gray-700 dark:hover:border-blue-500/50 dark:hover:bg-gray-800 transition-all duration-300 group"
                 title="GitHub"
               >
-                <Github className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+                <Github className="w-5 h-5 text-gray-600 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white transition-colors" />
               </a>
               <a
                 href="https://linkedin.com/in/javierparradev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-gray-800/80 border border-gray-700 hover:border-blue-500/50 hover:bg-gray-800 transition-all duration-300 group"
+                className="p-3 rounded-lg bg-gray-100 border border-gray-300 hover:border-blue-500/50 hover:bg-gray-200 dark:bg-gray-800/80 dark:border-gray-700 dark:hover:border-blue-500/50 dark:hover:bg-gray-800 transition-all duration-300 group"
                 title="LinkedIn"
               >
-                <Linkedin className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+                <Linkedin className="w-5 h-5 text-gray-600 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white transition-colors" />
               </a>
             </motion.div>
           </motion.div>
@@ -195,16 +195,16 @@ const Home = () => {
         >
           <button
             onClick={() => scrollToSection('about')}
-            className="p-2 rounded-full bg-gray-800/50 border border-gray-700 hover:border-blue-500/50 hover:bg-gray-800 transition-all duration-300 group"
+            className="p-2 rounded-full bg-gray-100 border border-gray-300 hover:border-blue-500/50 hover:bg-gray-200 dark:bg-gray-800/50 dark:border-gray-700 dark:hover:border-blue-500/50 dark:hover:bg-gray-800 transition-all duration-300 group"
             aria-label={t('hero.scrollDown')}
           >
-            <ArrowDown className="w-5 h-5 text-gray-500 group-hover:text-blue-400 animate-bounce" />
+            <ArrowDown className="w-5 h-5 text-gray-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 animate-bounce" />
           </button>
         </motion.div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="pt-40 pb-24 bg-gradient-to-b from-gray-950 to-gray-900">
+      <section id="about" className="pt-40 pb-24 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -213,10 +213,10 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
               {t('home.aboutTitle')}
             </h2>
-            <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
               {t('home.aboutDescription')}
             </p>
           </motion.div>
@@ -229,17 +229,17 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="p-6 bg-gray-800/50 border border-gray-700/50 rounded-xl hover:border-gray-600 transition-all duration-300 group"
+                className="p-6 bg-white border border-gray-200 rounded-xl hover:border-gray-300 dark:bg-gray-800/50 dark:border-gray-700/50 dark:hover:border-gray-600 transition-all duration-300 group"
               >
                 <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${item.color} mb-4 flex items-center justify-center`}>
                   <span className="text-white font-bold text-lg">
                     {t(`skills.${item.key}`)[0]}
                   </span>
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {t(`skills.${item.key}`)}
                 </h3>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
                   {item.description}
                 </p>
               </motion.div>

@@ -3,7 +3,8 @@
     "loading": "Cargando...",
     "viewAll": "Ver todo",
     "learnMore": "Ver más",
-    "clickToCopy": "(haz clic para copiar)"
+    "clickToCopy": "(haz clic para copiar)",
+    "copied": "(copiado!)"
   },
   "nav": {
     "home": "Inicio",
@@ -13,9 +14,9 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Hola, soy Javier Parra",
-    "role": "Desarrollador de Software",
-    "description": "Ayudo a empresas y equipos a optimizar procesos mediante aplicaciones web y automatizaciones. Construyo soluciones escalables, eficientes y enfocadas en resultados reales.",
+    "title": "Hola, soy Javier Parra ",
+    "role": "Backend & Full Stack Developer",
+    "description": "Ingeniero de Software enfocado en desarrollo Backend y Full Stack, modernización de sistemas legacy y automatización de procesos. Construyo aplicaciones web y soluciones empresariales orientadas a resultados.",
     "viewProjects": "Ver proyectos",
     "contactMe": "Trabajemos juntos",
     "downloadCV": "Descargar CV",
@@ -23,34 +24,35 @@
   },
   "home": {
     "aboutTitle": "Sobre mí",
-    "aboutSubtitle": "Desarrollador enfocado en crear soluciones web modernas y escalables.",
-    "aboutDescription": "Soy desarrollador de software en Colombia con experiencia construyendo aplicaciones web, APIs y automatizaciones. Disfruto analizar problemas, optimizar procesos y convertir ideas en soluciones reales utilizando tecnologías como React, Laravel, Django y Docker.",
-    "location": "Colombia",
-    "availableForWork": "Disponible para trabajar"
+    "aboutSubtitle": "Ingeniero de Software enfocado en Backend y desarrollo Full Stack.",
+    "aboutDescription": "Soy Ingeniero de Software en Colombia con experiencia en desarrollo Backend y Full Stack, modernización de sistemas legacy, automatización de procesos, APIs REST, aplicaciones web y soluciones e-commerce. He trabajado con Laravel, PHP, Python, React, Angular, SQL, Shopify y n8n, participando en análisis, desarrollo, documentación, pruebas, despliegue y mantenimiento.",
+    "location": "Bogotá, Colombia",
+    "availableForWork": "Disponible para trabajo remoto y reubicación"
   },
   "skills": {
-    "title": "Tecnologías",
-    "subtitle": "Herramientas y tecnologías que utilizo para construir aplicaciones",
+    "title": "Stack tecnológico",
+    "subtitle": "Tecnologías y herramientas con las que desarrollo soluciones web y empresariales",
     "frontend": "Frontend",
     "backend": "Backend",
+    "devops": "DevOps y herramientas",
     "database": "Bases de datos",
-    "tools": "Herramientas"
+    "tools": "Plataformas y metodologías"
   },
   "approach": {
     "title": "Cómo trabajo",
-    "subtitle": "Principios que guían mi desarrollo",
-    "userExperience": "Experiencia de usuario",
-    "userExperienceDesc": "Construyo interfaces claras, intuitivas y centradas en el usuario.",
+    "subtitle": "Principios que guían mi forma de desarrollar y entregar soluciones",
+    "userExperience": "Orientación a resultados",
+    "userExperienceDesc": "Busco que cada solución resuelva un problema real del negocio y mejore la experiencia de los usuarios.",
     "continuousLearning": "Aprendizaje continuo",
-    "continuousLearningDesc": "Siempre estoy aprendiendo nuevas herramientas y mejores prácticas.",
+    "continuousLearningDesc": "Fortalezco continuamente mis conocimientos en desarrollo, automatización y buenas prácticas de software.",
     "adaptability": "Adaptabilidad",
-    "adaptabilityDesc": "Me adapto rápidamente a nuevos retos y tecnologías.",
-    "endToEnd": "Soluciones completas",
-    "endToEndDesc": "Desarrollo soluciones completas desde la idea hasta el despliegue."
+    "adaptabilityDesc": "Me adapto a diferentes proyectos, equipos, tecnologías y sistemas existentes, incluyendo entornos legacy.",
+    "endToEnd": "Ciclo de vida completo",
+    "endToEndDesc": "Participo desde el análisis de requerimientos y desarrollo hasta documentación, pruebas, despliegue y mantenimiento."
   },
   "projects": {
-    "title": "Proyectos",
-    "subtitle": "Proyectos reales enfocados en resolver problemas concretos.",
+    "title": "Proyectos destacados",
+    "subtitle": "Soluciones reales orientadas a automatizar procesos, modernizar sistemas y mejorar experiencias digitales.",
     "theProblem": "Problema",
     "theSolution": "Solución",
     "myRole": "Mi rol",
@@ -58,9 +60,10 @@
     "impact": "Resultados",
     "completed": "Finalizado",
     "inProduction": "En producción",
+    "featured": "Proyecto destacado",
     "cta": {
       "title": "¿Te interesa trabajar conmigo?",
-      "description": "Estoy abierto a nuevas oportunidades y colaboraciones.",
+      "description": "Estoy abierto a oportunidades como Backend Developer Junior o Full Stack Developer Junior.",
       "getInTouch": "Contáctame",
       "viewGithub": "Ver GitHub"
     }
@@ -68,134 +71,257 @@
   "caseStudies": {
     "uscoDigiturno": {
       "title": "USCO Digiturno",
-      "subtitle": "Sistema de gestión de turnos y control operativo en entorno universitario",
-      "overview": "Diseñé e implementé un sistema interno para la gestión de turnos en la judicatura de la Universidad Surcolombiana, centralizando el control de asistencia, registro de estudiantes y análisis operativo en tiempo real.",
-      "problem": "El proceso era manual, desorganizado y sin trazabilidad, generando errores en el control de asistencia, pérdida de información y baja eficiencia en la gestión de turnos.",
-      "solution": "Desarrollé una aplicación web interna desplegada en red local que permite gestionar turnos, registrar estudiantes y monitorear asistencia en tiempo real. Implementé un sistema de parametrización y métricas para identificar horas pico, carga operativa y optimizar la asignación de turnos.",
-      "role": "Full-stack developer responsable de todo el ciclo de vida del proyecto: levantamiento de requerimientos, diseño de arquitectura, desarrollo, despliegue y documentación.",
+      "subtitle": "Sistema de control de turnos y registro de usuarios en entorno universitario",
+      "overview": "Participé en el análisis de necesidades institucionales y desarrollé un sistema de digiturno para el Juzgado Universitario de la Universidad Surcolombiana, fortaleciendo la organización y trazabilidad del ingreso de personas.",
+      "problem": "El proceso de atención y registro requería mayor organización y trazabilidad para controlar el flujo de usuarios y apoyar la gestión administrativa.",
+      "solution": "Implementé un sistema de digiturno para organizar la atención, registrar usuarios y generar información estadística sobre flujo de personas y asistencia del personal.",
+      "role": "Practicante Universitario con participación en análisis de necesidades, desarrollo del sistema, generación de reportes y organización de información institucional.",
       "impact": {
-        "processImprovement": "+60% mejora en organización de turnos",
-        "timeReduction": "-40% reducción en procesos manuales",
-        "dataVisibility": "Control y trazabilidad en tiempo real",
-        "operationalInsights": "Identificación de horas pico y carga operativa"
+        "processImprovement": "Mejor organización del flujo de usuarios",
+        "dataVisibility": "Mayor trazabilidad del ingreso y asistencia",
+        "operationalInsights": "Reportes estadísticos para apoyar la gestión"
+      }
+    },
+    "businessAutomation": {
+      "title": "Sistema de Automatización Empresarial",
+      "subtitle": "Herramientas internas para documentación, automatización y gestión de procesos",
+      "overview": "Desarrollo de herramientas internas orientadas a documentación, automatización y gestión de procesos empresariales utilizando Laravel y APIs REST.",
+      "problem": "Procesos internos que requerían mayor automatización, centralización de información y herramientas de apoyo a la gestión.",
+      "solution": "Desarrollé aplicaciones web y servicios orientados a automatizar procesos, integrar APIs REST y facilitar la gestión de información empresarial.",
+      "role": "Full Stack Developer responsable del desarrollo, integración de servicios, documentación y despliegue.",
+      "impact": {
+        "automation": "Automatización de procesos internos",
+        "integration": "Integración mediante APIs REST",
+        "maintainability": "Soluciones orientadas a mantenibilidad y escalabilidad"
       }
     },
     "shopifyManagement": {
-      "title": "Optimización de tiendas Shopify",
-      "subtitle": "Mejora de rendimiento y conversión en e-commerce (dropshipping)",
-      "overview": "Optimicé dos tiendas Shopify en el mercado colombiano, enfocándome en mejorar la experiencia de usuario, estructura visual y métricas de conversión.",
-      "problem": "Las tiendas presentaban baja tasa de conversión, diseño poco optimizado y una experiencia de usuario deficiente que afectaba directamente las ventas.",
-      "solution": "Rediseñé la interfaz y la arquitectura de navegación, integré plugins estratégicos y optimicé elementos clave del funnel de conversión. Ajusté métricas de rendimiento para mejorar tiempos de carga y experiencia general.",
-      "role": "Responsable de la optimización técnica y visual, implementación de mejoras y análisis de métricas orientadas a conversión.",
+      "title": "Optimización de tiendas E-commerce",
+      "subtitle": "Desarrollo y optimización de tiendas Shopify y WooCommerce",
+      "overview": "Desarrollé y optimicé soluciones e-commerce utilizando Shopify y WooCommerce, trabajando en personalización, SEO técnico y rendimiento web.",
+      "problem": "Tiendas online que requerían mejoras de experiencia de usuario, rendimiento, estructura y posicionamiento.",
+      "solution": "Personalicé tiendas, optimicé SEO técnico y Core Web Vitals, mejoré el rendimiento y configuré soluciones orientadas a las necesidades del negocio.",
+      "role": "Full Stack Developer responsable de desarrollo, personalización, optimización y comunicación directa con clientes.",
       "impact": {
-        "conversionImprovement": "Incremento en tasa de conversión",
-        "userExperience": "Mejora significativa en experiencia de usuario",
-        "performance": "Optimización de tiempos de carga",
-        "branding": "Rediseño visual alineado a identidad de marca"
-      }
-    },
-    "aiEyeAnalysis": {
-      "title": "Sistema de análisis ocular con inteligencia artificial",
-      "subtitle": "Diagnóstico asistido mediante visión artificial y modelos de deep learning",
-      "overview": "Desarrollé un sistema de análisis basado en inteligencia artificial utilizando un dataset de más de 50,000 imágenes de enfermedades oculares, capaz de evaluar el estado de la córnea en tiempo real.",
-      "problem": "El diagnóstico de enfermedades oculares requiere análisis especializados que no siempre están disponibles de forma inmediata, limitando la detección temprana.",
-      "solution": "Entrené un modelo de visión artificial utilizando YOLO con más de 1M de parámetros, integrando DeepSeek como API para procesamiento de datos. Desarrollé una aplicación que captura imágenes en tiempo real y genera predicciones junto con recomendaciones para el cuidado ocular.",
-      "role": "Desarrollador e investigador responsable del procesamiento de datos, entrenamiento del modelo, integración de inteligencia artificial y desarrollo de la aplicación completa.",
-      "impact": {
-        "realTimeAnalysis": "Detección y análisis en tiempo real",
-        "aiImplementation": "Modelo entrenado con +50,000 imágenes",
-        "medicalSupport": "Apoyo a diagnóstico temprano",
-        "innovation": "Integración de visión artificial y APIs de IA"
+        "performance": "Optimización de rendimiento web",
+        "seo": "Mejoras de SEO técnico y Core Web Vitals",
+        "ecommerce": "Desarrollo y optimización de plataformas e-commerce"
       }
     }
   },
   "experience": {
-    "title": "Experiencia",
-    "subtitle": "Un recorrido a través de roles impactantes en desarrollo de sistemas, optimización de procesos y transformación digital.",
+    "title": "Experiencia profesional",
+    "subtitle": "Experiencia en desarrollo de software, modernización de sistemas, automatización y análisis de procesos.",
+    "featured": "Destacado",
+    "keyAchievements": "Logros clave",
+    "techStack": "Stack y competencias",
     "cta": {
       "title": "¿Listo para trabajar juntos?",
-      "description": "Hablemos sobre cómo puedo contribuir al éxito de tu equipo.",
-      "getInTouch": "Ponte en Contacto",
-      "viewProjects": "Ver Más Proyectos"
+      "description": "Hablemos sobre cómo puedo aportar a tu equipo como Backend o Full Stack Developer.",
+      "getInTouch": "Ponte en contacto",
+      "viewProjects": "Ver proyectos"
     },
     "jobs": [
       {
-        "company": "Comfamiliar Huila",
-        "role": "Analista de Procesos (Jr.)",
-        "period": "Sep 2025 – Mar 2026",
-        "duration": "7 meses",
-        "location": "Neiva, Colombia",
+        "company": "Institución San Rafael Arcángel",
+        "role": "Docente de Informática",
+        "period": "Mar 2026 – Actualidad",
+        "duration": "Actualidad",
+        "location": "Colombia",
         "featured": true,
-        "description": "Lideré la documentación y optimización de procesos organizacionales complejos, combinando análisis de sistemas, metodologías ágiles y benchmarking estratégico para mejorar la eficiencia operativa y la toma de decisiones.",
+        "description": "Fortalezco el pensamiento lógico y computacional mediante fundamentos de programación y tecnologías digitales.",
         "achievements": [
-          "Entregué 34 documentaciones complejas de procesos (145 entregables) con 100% de aprobación ejecutiva",
-          "Implementé Scrum across 5 fases y 8 sprints, asegurando entrega estructurada y alineación con stakeholders",
-          "Realicé análisis comparativo de 12 programas académicos (MIT, Stanford, Andes), identificando 85 brechas críticas",
-          "Prioricé 48 mejores prácticas utilizando marcos MoSCoW y ROI"
+          "Diseñé estrategias para fortalecer el pensamiento lógico y computacional",
+          "Enseñé fundamentos de programación y tecnologías digitales",
+          "Elaboré recursos didácticos apoyados en herramientas tecnológicas"
         ],
         "tech": [
-          { "label": "Metodologías", "items": ["Scrum", "Agile", "MoSCoW", "ROI"] },
-          { "label": "Análisis", "items": ["Modelado de Procesos", "Benchmarking", "Pensamiento Sistémico"] },
-          { "label": "Herramientas", "items": ["Jira", "Herramientas Documentación", "Excel"] }
+          {
+            "label": "Áreas",
+            "items": [
+              "Programación",
+              "Pensamiento computacional",
+              "Tecnologías digitales"
+            ]
+          }
         ]
       },
       {
         "company": "Universidad Surcolombiana",
-        "role": "Desarrollador de Software Pasante (Digiturno)",
-        "period": "Feb 2025 – Jul 2025",
-        "duration": "6 meses",
+        "role": "Analista de Procesos (Documentador Jr.)",
+        "period": "Sep 2025 – Mar 2026",
+        "duration": "7 meses",
         "location": "Neiva, Colombia",
-        "description": "Diseñé e implementé un sistema digital de gestión de turnos (Digiturno) para optimizar flujo de servicio, registro de asistencia y visibilidad operativa en entorno judicial universitario.",
+        "featured": true,
+        "description": "Lideré la documentación y análisis de procesos institucionales, aplicando una metodología organizada y apoyando iniciativas de rediseño curricular.",
         "achievements": [
-          "Construí un sistema de gestión de turnos mejorando flujo de servicio y gestión de usuarios",
-          "Desarrollé módulo de registro de asistencia para monitoreo de personal",
-          "Generé reportes analíticos para toma de decisiones operativa",
-          "Reduje procesos manuales y mejoré organización del servicio"
+          "Lideré la documentación de 34 procesos institucionales, generando 145 entregables aprobados por el comité ejecutivo",
+          "Implementé una metodología basada en Scrum organizada en 5 fases y 8 sprints",
+          "Realicé un benchmark internacional de 12 universidades, identificando 85 oportunidades de mejora y 48 buenas prácticas",
+          "Documenté proyectos relacionados con Fintech, MLOps e IoT para apoyar el rediseño curricular de Ingeniería de Software"
         ],
         "tech": [
-          { "label": "Frontend", "items": ["React", "TypeScript"] },
-          { "label": "Backend", "items": ["Java", "Spring Boot"] },
-          { "label": "Base de Datos", "items": ["MySQL"] },
-          { "label": "Conceptos", "items": ["Diseño de Sistemas", "Datos en Tiempo Real"] }
+          {
+            "label": "Metodologías",
+            "items": [
+              "Scrum",
+              "Agile"
+            ]
+          },
+          {
+            "label": "Análisis",
+            "items": [
+              "Documentación de procesos",
+              "Benchmarking",
+              "Análisis de requerimientos"
+            ]
+          }
         ]
       },
       {
         "company": "Comfamiliar Huila",
-        "role": "Analista de Sistemas y Procesos (Jr. Developer)",
-        "period": "Aug 2025 – Dec 2025",
+        "role": "Ingeniero de Software Junior",
+        "period": "Ago 2025 – Dic 2025",
         "duration": "5 meses",
         "location": "Neiva, Colombia",
-        "description": "Analicé y modernizé sistemas legacy, mejorando integridad de datos, experiencia de usuario y flujos de trabajo internos mediante documentación técnica estructurada y colaboración entre equipos.",
+        "description": "Participé en la modernización de un sistema empresarial desarrollado en PHP, apoyando la migración del backend y la actualización del frontend.",
         "achievements": [
-          "Diagnostiqué systems legacy identificando fallos estructurales en módulos críticos",
-          "Mejoré integridad y consistencia de datos en sistemas operacionales clave",
-          "Documenté procesos de modernización y mejoras de sistema",
-          "Colaboré con equipos multidisciplinarios para rediseñar UX y reducir tiempos de acceso"
+          "Participé en la modernización de un sistema empresarial desarrollado en PHP",
+          "Colaboré en la migración del backend hacia Laravel LTS",
+          "Actualicé módulos frontend utilizando Angular LTS",
+          "Refactoricé módulos de Contabilidad y Reservaciones eliminando componentes obsoletos",
+          "Apoyé la evolución de la arquitectura para mejorar la mantenibilidad del sistema"
         ],
         "tech": [
-          { "label": "Backend", "items": ["PHP", "Laravel"] },
-          { "label": "Base de Datos", "items": ["MySQL"] },
-          { "label": "Conceptos", "items": ["Sistemas Legacy", "Integridad de Datos", "Refactorización de Sistemas"] }
+          {
+            "label": "Backend",
+            "items": [
+              "PHP",
+              "Laravel LTS"
+            ]
+          },
+          {
+            "label": "Frontend",
+            "items": [
+              "Angular LTS"
+            ]
+          },
+          {
+            "label": "Conceptos",
+            "items": [
+              "Sistemas legacy",
+              "Refactorización",
+              "Mantenibilidad"
+            ]
+          }
         ]
       },
       {
-        "company": "Biomédica S.A.S",
-        "role": "Ingeniero de Sistemas & Soporte",
-        "period": "Mar 2024 – Nov 2024",
-        "duration": "8 meses",
+        "company": "Universidad Surcolombiana",
+        "role": "Practicante Universitario",
+        "period": "Feb 2025 – Jul 2025",
+        "duration": "6 meses",
         "location": "Neiva, Colombia",
-        "description": "Trabajé en seguridad informática, organización de infraestructura e integridad de datos, implementando sistemas de backup automatizados y soportando plataformas digitales internas.",
+        "description": "Participé en el análisis de necesidades institucionales y en el desarrollo de un sistema de control y registro de usuarios para el Juzgado Universitario.",
         "achievements": [
-          "Diseñé sistema de backup automatizado para datos financieros sensibles",
-          "Mejoré integridad, confidencialidad y disponibilidad de datos",
-          "Supporté implementación de prácticas de ciberseguridad",
-          "Organicé infraestructura de red interna y cableado estructurado",
-          "Gestioné y actualicé sitios web institucionales"
+          "Participé en el análisis de necesidades institucionales para diseñar un sistema de control y registro de usuarios",
+          "Implementé un sistema de digiturno para fortalecer la organización y trazabilidad del ingreso de personas",
+          "Elaboré reportes estadísticos sobre flujo de usuarios y asistencia del personal",
+          "Apoyé la organización y control de información institucional mediante herramientas tecnológicas"
         ],
         "tech": [
-          { "label": "Infraestructura", "items": ["Redes", "Cableado Estructurado"] },
-          { "label": "Seguridad", "items": ["Backups", "Protección de Datos"] },
-          { "label": "Herramientas", "items": ["CMS Web", "DevOps Básico"] }
+          {
+            "label": "Competencias",
+            "items": [
+              "Análisis de necesidades",
+              "Desarrollo de sistemas",
+              "Reportes estadísticos"
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Fleming Biomédica S.A.S",
+        "role": "Ingeniero de Software",
+        "period": "Mar 2024 – Nov 2024",
+        "duration": "9 meses",
+        "location": "Colombia",
+        "description": "Desarrollé soluciones de automatización y apoyé la administración de infraestructura y sistemas internos de la organización.",
+        "achievements": [
+          "Desarrollé un sistema automatizado de respaldo de información, reduciendo el tiempo operativo de aproximadamente 20 a 8 minutos por ejecución",
+          "Implementé restricciones de acceso mediante listas blancas de IP para fortalecer la seguridad empresarial",
+          "Participé en el desarrollo de dos MVP internos para la gestión de órdenes de servicio y reportes de equipos biomédicos",
+          "Diseñé documentación técnica y manuales operativos para facilitar la continuidad del sistema",
+          "Administré infraestructura tecnológica y brindé soporte a los sistemas internos"
+        ],
+        "tech": [
+          {
+            "label": "Competencias",
+            "items": [
+              "Automatización",
+              "Seguridad",
+              "Infraestructura",
+              "Documentación técnica"
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Freelance",
+        "role": "Full Stack Developer",
+        "period": "Abr 2023 – Actualidad",
+        "duration": "Actualidad",
+        "location": "Remoto",
+        "description": "Desarrollo soluciones web y e-commerce para clientes, participando directamente en el levantamiento de requerimientos, desarrollo, despliegue y mantenimiento.",
+        "achievements": [
+          "Desarrollo de aplicaciones web utilizando Laravel, PHP, React y Angular",
+          "Creación de soluciones e-commerce sobre Shopify y WooCommerce",
+          "Desarrollo e integración de APIs REST y servicios de terceros",
+          "Automatización de procesos mediante n8n e integración de herramientas de Inteligencia Artificial",
+          "Optimización de SEO técnico, Core Web Vitals y rendimiento web",
+          "Administración de servidores Linux y despliegues en producción",
+          "Comunicación directa con clientes para levantamiento de requerimientos, seguimiento y entrega de proyectos"
+        ],
+        "tech": [
+          {
+            "label": "Backend",
+            "items": [
+              "Laravel",
+              "PHP",
+              "Python",
+              "REST APIs"
+            ]
+          },
+          {
+            "label": "Frontend",
+            "items": [
+              "React",
+              "Angular",
+              "JavaScript",
+              "TypeScript",
+              "HTML",
+              "CSS",
+              "Tailwind CSS"
+            ]
+          },
+          {
+            "label": "DevOps",
+            "items": [
+              "Git",
+              "GitHub",
+              "Linux",
+              "Docker",
+              "Postman",
+              "n8n"
+            ]
+          },
+          {
+            "label": "E-commerce",
+            "items": [
+              "Shopify",
+              "WooCommerce"
+            ]
+          }
         ]
       }
     ]
@@ -206,9 +332,9 @@
   },
   "contact": {
     "title": "Contacto",
-    "subtitle": "¿Tienes una idea o proyecto? Hablemos.",
+    "subtitle": "¿Tienes una oportunidad, idea o proyecto? Hablemos.",
     "letsConnect": "Conectemos",
-    "description": "Actualmente estoy disponible para nuevas oportunidades. Si tienes un proyecto, una idea o simplemente quieres saludar, no dudes en escribirme.",
+    "description": "Actualmente estoy abierto a oportunidades como Backend Developer Junior o Full Stack Developer Junior, incluyendo trabajo remoto y reubicación.",
     "directContact": "Contacto directo",
     "socialLinks": "Redes",
     "form": {
@@ -217,13 +343,13 @@
       "email": "Correo",
       "emailPlaceholder": "tu@email.com",
       "message": "Mensaje",
-      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "messagePlaceholder": "Cuéntame sobre la oportunidad o proyecto...",
       "sendMessage": "Enviar mensaje",
       "messageSent": "Mensaje enviado"
     }
   },
   "footer": {
-    "role": "Desarrollador de software en Colombia",
+    "role": "Backend & Full Stack Developer · Colombia",
     "quickLinks": "Enlaces",
     "connect": "Conectar",
     "copyright": "Todos los derechos reservados.",

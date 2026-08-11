@@ -1,36 +1,35 @@
 import { useTranslation } from 'react-i18next';
 import { Github, Linkedin, Mail, Send, Check, MapPin } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-
-const WHATSAPP_NUMBER = '+573001234567';
-const EMAIL = 'javier00parra@gmail.com';
+import { EMAIL, WHATSAPP_NUMBER } from '../constants';
 
 const socialLinks = [
   {
     name: 'GitHub',
     icon: Github,
     href: 'https://github.com/JavierparraDev',
-    bgColor: 'bg-gray-800 hover:bg-gray-700',
-    borderColor: 'border-gray-700 hover:border-gray-500',
-    iconColor: 'text-gray-400 hover:text-white'
+    bgColor: 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700',
+    borderColor: 'border-gray-300 hover:border-gray-400 dark:border-gray-700 dark:hover:border-gray-500',
+    iconColor: 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'
   },
   {
     name: 'LinkedIn',
     icon: Linkedin,
     href: 'https://www.linkedin.com/in/javierparradev/',
-    bgColor: 'bg-gray-800 hover:bg-blue-600',
-    borderColor: 'border-gray-700 hover:border-blue-500',
-    iconColor: 'text-gray-400 hover:text-white'
+    bgColor: 'bg-gray-100 hover:bg-blue-50 dark:bg-gray-800 dark:hover:bg-blue-600',
+    borderColor: 'border-gray-300 hover:border-blue-500 dark:border-gray-700 dark:hover:border-blue-500',
+    iconColor: 'text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white'
   },
   {
     name: 'WhatsApp',
-    icon: Linkedin,
+    icon: FaWhatsapp,
     href: `https://wa.me/${WHATSAPP_NUMBER.replace('+', '')}`,
-    bgColor: 'bg-gray-800 hover:bg-green-600',
-    borderColor: 'border-gray-700 hover:border-green-500',
-    iconColor: 'text-gray-400 hover:text-white'
+    bgColor: 'bg-gray-100 hover:bg-green-50 dark:bg-gray-800 dark:hover:bg-green-600',
+    borderColor: 'border-gray-300 hover:border-green-500 dark:border-gray-700 dark:hover:border-green-500',
+    iconColor: 'text-gray-600 hover:text-green-600 dark:text-gray-400 dark:hover:text-white'
   }
 ];
 
@@ -46,6 +45,9 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`Contacto desde el portafolio - ${form.name}`);
+    const body = encodeURIComponent(`${form.message}\n\n---\nNombre: ${form.name}\nCorreo: ${form.email}`);
+    window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
     setSent(true);
     setTimeout(() => setSent(false), 4000);
     setForm({ name: '', email: '', message: '' });
@@ -74,14 +76,17 @@ const Contact = () => {
     }
   };
 
+  const titleParts = t('contact.title').split(' ');
+  const gradientTitle = titleParts.length > 1 ? titleParts.slice(1).join(' ') : '';
+
   return (
-    <div className="min-h-screen bg-gray-950">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       <Helmet>
         <title>{t('contact.title')} | Javier Parra - {t('hero.role')}</title>
         <meta name="description" content={t('contact.description')} />
       </Helmet>
 
-      <section className="relative py-24 bg-gradient-to-b from-gray-900 to-gray-950 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-b from-gray-100 to-gray-50 dark:from-gray-900 dark:to-gray-950 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
@@ -94,58 +99,63 @@ const Contact = () => {
           variants={containerVariants}
         >
           <motion.div className="text-center mb-12" variants={itemVariants}>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              {t('contact.title').split(' ')[0]}{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                {t('contact.title').split(' ').slice(1).join(' ')}
-              </span>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              {titleParts[0]}
+              {gradientTitle && (
+                <>
+                  {' '}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 dark:from-blue-400 dark:to-cyan-400">
+                    {gradientTitle}
+                  </span>
+                </>
+              )}
             </h1>
-            <p className="text-xl text-gray-400">
+            <p className="text-xl text-gray-600 dark:text-gray-400">
               {t('contact.subtitle')}
             </p>
           </motion.div>
 
           <motion.div
-            className="bg-gray-900/50 border border-gray-800 rounded-2xl p-8 md:p-10"
+            className="bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 md:p-10"
             variants={itemVariants}
           >
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
               {/* Contact Info */}
               <div className="lg:col-span-2 space-y-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-4">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                     {t('contact.letsConnect')}
                   </h3>
-                  <p className="text-gray-400 leading-relaxed mb-6">
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                     {t('contact.description')}
                   </p>
                   
-                  <div className="flex items-center gap-3 text-gray-400 mb-6">
-                    <MapPin className="w-5 h-5 text-blue-400" />
+                  <div className="flex items-center gap-3 text-gray-600 dark:text-gray-400 mb-6">
+                    <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                     <span>{t('home.location')}</span>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-4">
+                  <h4 className="text-sm font-medium text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-4">
                     {t('contact.directContact')}
                   </h4>
                   <button
                     onClick={copyEmail}
-                    className="flex items-center gap-3 text-blue-400 hover:text-blue-300 transition-colors group"
+                    className="flex items-center gap-3 text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 transition-colors group"
                   >
                     <Mail className="w-5 h-5" />
                     <span>{EMAIL}</span>
                     {copied ? (
-                      <Check className="w-4 h-4 text-green-400" />
+                      <Check className="w-4 h-4 text-green-600 dark:text-green-400" />
                     ) : (
-                      <span className="text-xs text-gray-500 group-hover:text-gray-400">{t('common.clickToCopy')}</span>
+                      <span className="text-xs text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-400">{t('common.clickToCopy')}</span>
                     )}
                   </button>
                 </div>
 
                 <div>
-                  <h4 className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-4">
+                  <h4 className="text-sm font-medium text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-4">
                     {t('contact.socialLinks')}
                   </h4>
                   <div className="flex gap-3">
@@ -169,7 +179,7 @@ const Contact = () => {
               <div className="lg:col-span-3">
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
                       {t('contact.form.name')}
                     </label>
                     <input
@@ -179,12 +189,12 @@ const Contact = () => {
                       value={form.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-white dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none transition-colors"
                       placeholder={t('contact.form.namePlaceholder')}
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
                       {t('contact.form.email')}
                     </label>
                     <input
@@ -194,12 +204,12 @@ const Contact = () => {
                       value={form.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-white dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none transition-colors"
                       placeholder={t('contact.form.emailPlaceholder')}
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
                       {t('contact.form.message')}
                     </label>
                     <textarea

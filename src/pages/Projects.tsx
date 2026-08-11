@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { 
   Globe, 
   Code, 
@@ -31,6 +32,8 @@ interface CaseStudy {
 const Projects = () => {
   const { t } = useTranslation();
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const titleParts = t('projects.title').split(' ');
+  const gradientTitle = titleParts.length > 1 ? titleParts.slice(1).join(' ') : '';
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -116,9 +119,9 @@ const caseStudies: CaseStudy[] = [
 ];
 
   return (
-    <div className="min-h-screen bg-gray-950">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-gray-900 to-gray-950 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-b from-gray-100 to-gray-50 dark:from-gray-900 dark:to-gray-950 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
@@ -130,20 +133,25 @@ const caseStudies: CaseStudy[] = [
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            {t('projects.title').split(' ')[0]}{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-              {t('projects.title').split(' ').slice(1).join(' ')}
-            </span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            {titleParts[0]}
+            {gradientTitle && (
+              <>
+                {' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500 dark:from-blue-400 dark:to-cyan-400">
+                  {gradientTitle}
+                </span>
+              </>
+            )}
           </h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
             {t('projects.subtitle')}
           </p>
         </motion.div>
       </section>
 
       {/* Case Studies */}
-      <section className="py-20 bg-gradient-to-b from-gray-950 to-gray-900">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div
             variants={containerVariants}
@@ -155,7 +163,7 @@ const caseStudies: CaseStudy[] = [
               <motion.div
                 key={project.id}
                 variants={itemVariants}
-                className="bg-gray-900/50 border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 transition-all duration-300"
+                className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 dark:bg-gray-900/50 dark:border-gray-800 dark:hover:border-gray-700 transition-all duration-300"
               >
                 {/* Header */}
                 <button
@@ -171,7 +179,7 @@ const caseStudies: CaseStudy[] = [
                     {project.featured && (
                       <div className="mb-2">
                         <span className="px-3 py-1 text-xs font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full inline-block">
-                          🔥 Featured Project
+                          {t('projects.featured')}
                         </span>
                       </div>
                     )}
@@ -182,7 +190,7 @@ const caseStudies: CaseStudy[] = [
                         {project.badges.map((badge) => (
                           <span
                             key={badge}
-                            className="px-2.5 py-0.5 text-xs bg-gray-800 border border-gray-700 text-gray-300 rounded-full"
+                            className="px-2.5 py-0.5 text-xs bg-gray-100 border border-gray-200 text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 rounded-full"
                           >
                             {badge}
                           </span>
@@ -191,7 +199,7 @@ const caseStudies: CaseStudy[] = [
                     )}
                     
                     <div className="flex items-center gap-3 mb-1">
-                      <h3 className="text-xl md:text-2xl font-bold text-white">
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
                         {t(project.titleKey)}
                       </h3>
                       <span className={`px-2.5 py-0.5 rounded-full text-xs font-medium ${
@@ -202,7 +210,7 @@ const caseStudies: CaseStudy[] = [
                         {project.status === 'completed' ? t('projects.completed') : t('projects.inProduction')}
                       </span>
                     </div>
-                    <p className="text-gray-400 mb-4">{t(project.subtitleKey)}</p>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">{t(project.subtitleKey)}</p>
                     
                     <p className={`text-gray-500 text-sm leading-relaxed ${expandedId === project.id ? '' : 'line-clamp-2'}`}>
                       {t(project.overviewKey)}
@@ -223,7 +231,7 @@ const caseStudies: CaseStudy[] = [
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="px-6 md:px-8 pb-8 border-t border-gray-800"
+                    className="px-6 md:px-8 pb-8 border-t border-gray-200 dark:border-gray-800"
                   >
                     <div className="pt-6 space-y-8">
                       {/* Problem & Solution */}
@@ -233,7 +241,7 @@ const caseStudies: CaseStudy[] = [
                             <span className="w-2 h-2 bg-red-500 rounded-full"></span>
                             {t('projects.theProblem')}
                           </h4>
-                          <p className="text-gray-400 text-sm leading-relaxed">
+                          <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                             {t(project.problemKey)}
                           </p>
                         </div>
@@ -242,7 +250,7 @@ const caseStudies: CaseStudy[] = [
                             <span className="w-2 h-2 bg-green-500 rounded-full"></span>
                             {t('projects.theSolution')}
                           </h4>
-                          <p className="text-gray-400 text-sm leading-relaxed">
+                          <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                             {t(project.solutionKey)}
                           </p>
                         </div>
@@ -254,14 +262,14 @@ const caseStudies: CaseStudy[] = [
                           <Code className="w-4 h-4" />
                           {t('projects.myRole')}
                         </h4>
-                        <p className="text-gray-400 text-sm leading-relaxed">
+                        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                           {t(project.roleKey)}
                         </p>
                       </div>
 
                       {/* Tech Stack */}
                       <div>
-                        <h4 className="text-sm font-semibold text-gray-400 mb-3 flex items-center gap-2">
+                        <h4 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-3 flex items-center gap-2">
                           <Layers className="w-4 h-4" />
                           {t('projects.techStack')}
                         </h4>
@@ -269,7 +277,7 @@ const caseStudies: CaseStudy[] = [
                           {project.techStack.map((tech) => (
                             <span
                               key={tech}
-                              className="px-3 py-1.5 bg-gray-800 border border-gray-700 text-gray-300 text-sm rounded-lg"
+                              className="px-3 py-1.5 bg-gray-100 border border-gray-200 text-gray-700 text-sm rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300"
                             >
                               {tech}
                             </span>
@@ -279,7 +287,7 @@ const caseStudies: CaseStudy[] = [
 
                       {/* Impact Metrics */}
                       <div>
-                        <h4 className="text-sm font-semibold text-gray-400 mb-3 flex items-center gap-2">
+                        <h4 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-3 flex items-center gap-2">
                           <CheckCircle className="w-4 h-4" />
                           {t('projects.impact')}
                         </h4>
@@ -287,9 +295,9 @@ const caseStudies: CaseStudy[] = [
                           {project.impact.map((item, idx) => (
                             <div 
                               key={idx}
-                              className="p-4 bg-gray-800/50 border border-gray-700 rounded-xl text-center"
+                              className="p-4 bg-gray-100 border border-gray-200 rounded-xl text-center dark:bg-gray-800/50 dark:border-gray-700"
                             >
-                              <div className="text-2xl font-bold text-white mb-1">
+                              <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
                                 {item.value}
                               </div>
                               <div className="text-xs text-gray-500 uppercase tracking-wide">
@@ -309,7 +317,7 @@ const caseStudies: CaseStudy[] = [
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-t from-gray-950 to-gray-900">
+      <section className="py-20 bg-gradient-to-t from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -317,24 +325,24 @@ const caseStudies: CaseStudy[] = [
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               {t('projects.cta.title')}
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-gray-600 dark:text-gray-400 mb-8">
               {t('projects.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contacto"
+              <Link
+                to="/contacto"
                 className="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25"
               >
                 {t('projects.cta.getInTouch')}
-              </a>
+              </Link>
               <a
                 href="https://github.com/JavierparraDev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3.5 bg-gray-800 border border-gray-700 hover:border-gray-600 text-white font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
+                className="px-8 py-3.5 bg-gray-100 border border-gray-300 hover:border-gray-400 text-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-white font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <Github className="w-4 h-4" />
                 {t('projects.cta.viewGithub')}

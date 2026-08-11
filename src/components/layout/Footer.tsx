@@ -3,38 +3,38 @@ import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { EMAIL, WHATSAPP_NUMBER } from '../../constants';
 
 const Footer = () => {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   const [copied, setCopied] = useState(false);
-  const EMAIL = 'javier00parra@gmail.com';
-  const WHATSAPP_NUMBER = '+573133217887';
 
   const socialLinks = [
     {
       name: 'GitHub',
       icon: Github,
       href: 'https://github.com/JavierparraDev',
-      bgColor: 'bg-gray-800 hover:bg-gray-700',
-      borderColor: 'border-gray-700 hover:border-gray-500',
-      iconColor: 'text-gray-400 hover:text-white'
+      bgColor: 'bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700',
+      borderColor: 'border-gray-300 hover:border-gray-400 dark:border-gray-700 dark:hover:border-gray-500',
+      iconColor: 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
       href: 'https://www.linkedin.com/in/javierparradev/',
-      bgColor: 'bg-gray-800 hover:bg-blue-600',
-      borderColor: 'border-gray-700 hover:border-blue-500',
-      iconColor: 'text-gray-400 hover:text-white'
+      bgColor: 'bg-gray-100 hover:bg-blue-50 dark:bg-gray-800 dark:hover:bg-blue-600',
+      borderColor: 'border-gray-300 hover:border-blue-500 dark:border-gray-700 dark:hover:border-blue-500',
+      iconColor: 'text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white'
     },
     {
       name: 'WhatsApp',
       icon: FaWhatsapp,
       href: `https://wa.me/${WHATSAPP_NUMBER.replace('+', '')}`,
-      bgColor: 'bg-gray-800 hover:bg-green-600',
-      borderColor: 'border-gray-700 hover:border-green-500',
-      iconColor: 'text-gray-400 hover:text-white'
+      bgColor: 'bg-gray-100 hover:bg-green-50 dark:bg-gray-800 dark:hover:bg-green-600',
+      borderColor: 'border-gray-300 hover:border-green-500 dark:border-gray-700 dark:hover:border-green-500',
+      iconColor: 'text-gray-600 hover:text-green-600 dark:text-gray-400 dark:hover:text-white'
     }
   ];
 
@@ -51,7 +51,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 border-t border-gray-800">
+    <footer className="bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-5xl mx-auto px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Personal Info */}
@@ -67,19 +67,19 @@ const Footer = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-lg opacity-50"></div>
                   <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-blue-500/30">
                     <img
-                      src="/javier-perfil.svg"
+                      src="/javier-parra.png"
                       alt="Javier Parra"
                       className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
-                <span className="text-xl font-bold text-white">
+                <span className="text-xl font-bold text-gray-900 dark:text-white">
                   {t('hero.title')}
                 </span>
               </div>
 
-              <div className="text-gray-400 text-sm">
-                <p className="mb-2 text-gray-300 font-medium">
+              <div className="text-gray-600 dark:text-gray-400 text-sm">
+                <p className="mb-2 text-gray-700 dark:text-gray-300 font-medium">
                   {t('footer.role')}
                 </p>
                 <button
@@ -89,7 +89,7 @@ const Footer = () => {
                   <Mail className="w-4 h-4" />
                   {EMAIL}
                   {copied && (
-                    <span className="text-green-400 text-xs">(copied!)</span>
+                    <span className="text-green-600 dark:text-green-400 text-xs">{t('common.copied')}</span>
                   )}
                 </button>
               </div>
@@ -98,17 +98,17 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">{t('footer.quickLinks')}</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{t('footer.quickLinks')}</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.key}>
-                  <a 
-                    href={link.href} 
-                    className="text-gray-400 hover:text-blue-400 transition-colors duration-200 flex items-center gap-2"
+                  <Link 
+                    to={link.href} 
+                    className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200 flex items-center gap-2"
                   >
                     <span className="w-1 h-1 bg-blue-500 rounded-full"></span>
                     {t(`nav.${link.key}`)}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -116,7 +116,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">{t('footer.connect')}</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{t('footer.connect')}</h3>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <motion.a
@@ -137,13 +137,13 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-800 mt-10 pt-8">
+        <div className="border-t border-gray-200 dark:border-gray-800 mt-10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-500 dark:text-gray-500 text-sm">
               © {currentYear} {t('hero.title')}. {t('footer.copyright')}
             </p>
-            <p className="text-gray-500 text-sm flex items-center gap-1">
-              {t('footer.builtWith')} <Heart className="w-4 h-4 text-red-500" /> {t('footer.andLotsOf')} coffee
+            <p className="text-gray-500 dark:text-gray-500 text-sm flex items-center gap-1">
+              {t('footer.builtWith')} <Heart className="w-4 h-4 text-red-500" /> {t('footer.andLotsOf')}
             </p>
           </div>
         </div>

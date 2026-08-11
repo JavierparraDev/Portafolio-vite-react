@@ -3,7 +3,8 @@
     "loading": "Loading...",
     "viewAll": "View all",
     "learnMore": "Learn more",
-    "clickToCopy": "(click to copy)"
+    "clickToCopy": "(click to copy)",
+    "copied": "(copied!)"
   },
   "nav": {
     "home": "Home",
@@ -11,12 +12,11 @@
     "work": "Projects",
     "experience": "Experience",
     "contact": "Contact"
-
   },
   "hero": {
-    "title": "Hi, I'm Javier Parra",
-    "role": "Software Developer",
-    "description": "I help businesses and teams optimize processes through web applications and automation. I build scalable, efficient solutions focused on real-world impact.",
+    "title": "Hi, I'm Javier Parra ",
+    "role": "Backend & Full Stack Developer",
+    "description": "Software Engineer focused on Backend and Full Stack development, legacy system modernization, and process automation. I build web applications and business solutions focused on measurable outcomes.",
     "viewProjects": "View projects",
     "contactMe": "Let's work together",
     "downloadCV": "Download CV",
@@ -24,44 +24,46 @@
   },
   "home": {
     "aboutTitle": "About me",
-    "aboutSubtitle": "Developer focused on building modern and scalable web solutions.",
-    "aboutDescription": "I'm a software developer based in Colombia with experience building web applications, APIs, and automation systems. I enjoy analyzing problems, optimizing processes, and turning ideas into real solutions using technologies like React, Laravel, Django, and Docker.",
-    "location": "Colombia",
-    "availableForWork": "Available for work"
+    "aboutSubtitle": "Software Engineer focused on Backend and Full Stack development.",
+    "aboutDescription": "I'm a Software Engineer based in Colombia with experience in Backend and Full Stack development, legacy system modernization, process automation, REST APIs, web applications, and e-commerce solutions. I've worked with Laravel, PHP, Python, React, Angular, SQL, Shopify, and n8n, participating in requirements analysis, development, documentation, testing, deployment, and maintenance.",
+    "location": "Bogotá, Colombia",
+    "availableForWork": "Available for remote work and relocation"
   },
   "skills": {
-    "title": "Technologies",
-    "subtitle": "Tools and technologies I use to build applications",
+    "title": "Tech stack",
+    "subtitle": "Technologies and tools I use to build web and business solutions",
     "frontend": "Frontend",
     "backend": "Backend",
+    "devops": "DevOps & tools",
     "database": "Databases",
-    "tools": "Tools"
+    "tools": "Platforms & methodologies"
   },
   "approach": {
     "title": "How I work",
-    "subtitle": "Principles that guide my development",
-    "userExperience": "User Experience",
-    "userExperienceDesc": "I build clear, intuitive, and user-centered interfaces.",
-    "continuousLearning": "Continuous Learning",
-    "continuousLearningDesc": "I’m constantly learning new tools and best practices.",
+    "subtitle": "Principles that guide how I develop and deliver solutions",
+    "userExperience": "Results-oriented",
+    "userExperienceDesc": "I focus on making every solution address a real business problem and improve the user experience.",
+    "continuousLearning": "Continuous learning",
+    "continuousLearningDesc": "I continuously strengthen my skills in software development, automation, and engineering best practices.",
     "adaptability": "Adaptability",
-    "adaptabilityDesc": "I quickly adapt to new challenges and technologies.",
-    "endToEnd": "End-to-End Solutions",
-    "endToEndDesc": "I build complete solutions from idea to deployment."
+    "adaptabilityDesc": "I adapt to different projects, teams, technologies, and existing systems, including legacy environments.",
+    "endToEnd": "End-to-end ownership",
+    "endToEndDesc": "I contribute across the lifecycle, from requirements analysis and development to documentation, testing, deployment, and maintenance."
   },
   "projects": {
-    "title": "Projects",
-    "subtitle": "Real-world projects focused on solving meaningful problems.",
+    "title": "Featured projects",
+    "subtitle": "Real-world solutions focused on process automation, system modernization, and better digital experiences.",
     "theProblem": "Problem",
     "theSolution": "Solution",
     "myRole": "My role",
-    "techStack": "Tech stack",
+    "techStack": "Technologies",
     "impact": "Impact",
     "completed": "Completed",
     "inProduction": "In production",
+    "featured": "Featured project",
     "cta": {
       "title": "Interested in working together?",
-      "description": "I'm open to new opportunities and collaborations.",
+      "description": "I'm open to opportunities as a Junior Backend Developer or Junior Full Stack Developer.",
       "getInTouch": "Get in touch",
       "viewGithub": "View GitHub"
     }
@@ -69,147 +71,270 @@
   "caseStudies": {
     "uscoDigiturno": {
       "title": "USCO Digiturno",
-      "subtitle": "Queue management and operational control system for a university environment",
-      "overview": "Designed and implemented an internal system to manage queues for the Universidad Surcolombiana, centralizing attendance tracking, student registration, and real-time operational insights.",
-      "problem": "The process was manual, disorganized, and lacked traceability, leading to attendance errors, data loss, and inefficient queue management.",
-      "solution": "Built an internal web application deployed on a local network to manage queues, register students, and monitor attendance in real time. Implemented configurable metrics to identify peak hours and optimize workload distribution.",
-      "role": "Full-stack developer responsible for the entire project lifecycle: requirements gathering, system design, development, deployment, and documentation.",
+      "subtitle": "Queue management and user registration system in a university environment",
+      "overview": "I participated in requirements analysis and developed a queue management system for the Universidad Surcolombiana's University Court, improving organization and traceability of visitor intake.",
+      "problem": "The service and registration process required better organization and traceability to control user flow and support administrative management.",
+      "solution": "Implemented a queue management system to organize service, register users, and generate statistical information on user flow and staff attendance.",
+      "role": "University Intern involved in requirements analysis, system development, reporting, and institutional information management.",
       "impact": {
-        "processImprovement": "+60% improvement in queue organization",
-        "timeReduction": "-40% reduction in manual processes",
-        "dataVisibility": "Real-time tracking and full traceability",
-        "operationalInsights": "Peak-hour and workload analysis"
+        "processImprovement": "Improved organization of user flow",
+        "dataVisibility": "Greater traceability of entry and attendance",
+        "operationalInsights": "Statistical reports to support management"
+      }
+    },
+    "businessAutomation": {
+      "title": "Business Automation System",
+      "subtitle": "Internal tools for documentation, automation, and process management",
+      "overview": "Developed internal tools focused on documentation, automation, and business process management using Laravel and REST APIs.",
+      "problem": "Internal processes required more automation, centralized information, and tools to support business management.",
+      "solution": "Developed web applications and services to automate processes, integrate REST APIs, and facilitate business information management.",
+      "role": "Full Stack Developer responsible for development, service integration, documentation, and deployment.",
+      "impact": {
+        "automation": "Automation of internal processes",
+        "integration": "REST API integrations",
+        "maintainability": "Solutions focused on maintainability and scalability"
       }
     },
     "shopifyManagement": {
-      "title": "Shopify Store Optimization",
-      "subtitle": "Performance and conversion improvements for e-commerce (dropshipping)",
-      "overview": "Optimized two Shopify stores in the Colombian market, focusing on improving user experience, visual structure, and conversion metrics.",
-      "problem": "The stores had low conversion rates, poor visual design, and an inefficient user experience that negatively impacted sales.",
-      "solution": "Redesigned the UI and navigation structure, integrated strategic plugins, and optimized key elements of the conversion funnel. Improved performance metrics including load times and usability.",
-      "role": "Led technical and visual optimization, implementing improvements and analyzing performance metrics focused on conversion.",
+      "title": "E-commerce Store Development & Optimization",
+      "subtitle": "Shopify and WooCommerce development and optimization",
+      "overview": "Developed and optimized e-commerce solutions using Shopify and WooCommerce, working on customization, technical SEO, and web performance.",
+      "problem": "Online stores required improvements in user experience, performance, structure, and search visibility.",
+      "solution": "Customized stores, optimized technical SEO and Core Web Vitals, improved performance, and configured solutions based on business needs.",
+      "role": "Full Stack Developer responsible for development, customization, optimization, and direct client communication.",
       "impact": {
-        "conversionImprovement": "Increased conversion rate",
-        "userExperience": "Significant UX improvements",
-        "performance": "Faster load times",
-        "branding": "Stronger and more consistent branding"
-      }
-    },
-    "aiEyeAnalysis": {
-      "title": "AI-Powered Eye Disease Analysis",
-      "subtitle": "Computer vision system for assisted medical diagnosis",
-      "overview": "Developed an AI-based system using a dataset of over 50,000 eye disease images, capable of analyzing corneal conditions in real time.",
-      "problem": "Early diagnosis of eye diseases requires specialized analysis, which is not always immediately accessible.",
-      "solution": "Trained a computer vision model using YOLO with over 1M parameters and integrated DeepSeek as a data processing API. Built an application that captures real-time eye data and provides predictions along with care recommendations.",
-      "role": "Developer and researcher responsible for data processing, model training, AI integration, and full application development.",
-      "impact": {
-        "realTimeAnalysis": "Real-time detection and analysis",
-        "aiImplementation": "Model trained on 50,000+ images",
-        "medicalSupport": "Supports early diagnosis",
-        "innovation": "Integration of computer vision and AI APIs"
+        "performance": "Improved web performance",
+        "seo": "Technical SEO and Core Web Vitals improvements",
+        "ecommerce": "Development and optimization of e-commerce platforms"
       }
     }
   },
   "experience": {
-    "title": "Professional",
-    "subtitle": "A journey through impactful roles in systems development, process optimization, and digital transformation.",
+    "title": "Professional experience",
+    "subtitle": "Experience in software development, system modernization, automation, and process analysis.",
+    "featured": "Featured",
+    "keyAchievements": "Key achievements",
+    "techStack": "Stack & competencies",
     "cta": {
-      "title": "Ready to Work Together?",
-      "description": "Let's discuss how I can contribute to your team's success.",
-      "getInTouch": "Get In Touch",
-      "viewProjects": "View Projects"
+      "title": "Ready to work together?",
+      "description": "Let's discuss how I can contribute to your team as a Backend or Full Stack Developer.",
+      "getInTouch": "Get in touch",
+      "viewProjects": "View projects"
     },
     "jobs": [
       {
-        "company": "Comfamiliar Huila",
-        "role": "Process Analyst (Jr.)",
-        "period": "Sep 2025 – Mar 2026",
-        "duration": "7 months",
-        "location": "Neiva, Colombia",
+        "company": "Institución San Rafael Arcángel",
+        "role": "Computer Science Teacher",
+        "period": "Mar 2026 – Present",
+        "duration": "Present",
+        "location": "Colombia",
         "featured": true,
-        "description": "Led the documentation and optimization of complex organizational processes, combining system analysis, agile methodologies, and strategic benchmarking to improve operational efficiency and decision-making.",
+        "description": "Strengthen logical and computational thinking through programming fundamentals and digital technologies.",
         "achievements": [
-          "Delivered 34 complex process documentations (145 deliverables) with 100% executive approval",
-          "Implemented Scrum across 5 phases and 8 sprints, ensuring structured delivery and stakeholder alignment",
-          "Conducted comparative analysis of 12 academic programs (MIT, Stanford, Andes), identifying 85 critical gaps",
-          "Prioritized 48 best practices using MoSCoW and ROI frameworks"
+          "Designed strategies to strengthen logical and computational thinking",
+          "Taught programming fundamentals and digital technologies",
+          "Created educational resources supported by technology"
         ],
         "tech": [
-          { "label": "Methodologies", "items": ["Scrum", "Agile", "MoSCoW", "ROI"] },
-          { "label": "Analysis", "items": ["Process Modeling", "Benchmarking", "System Thinking"] },
-          { "label": "Tools", "items": ["Jira", "Documentation Tools", "Excel"] }
+          {
+            "label": "Areas",
+            "items": [
+              "Programming",
+              "Computational thinking",
+              "Digital technologies"
+            ]
+          }
         ]
       },
       {
         "company": "Universidad Surcolombiana",
-        "role": "Software Developer Intern (Digiturno)",
-        "period": "Feb 2025 – Jul 2025",
-        "duration": "6 months",
+        "role": "Process Analyst (Junior Documenter)",
+        "period": "Sep 2025 – Mar 2026",
+        "duration": "7 months",
         "location": "Neiva, Colombia",
-        "description": "Designed and implemented a digital queue management system (Digiturno) to optimize service flow, attendance tracking, and operational visibility in a university judicial environment.",
+        "featured": true,
+        "description": "Led institutional process documentation and analysis, applying a structured methodology and supporting curriculum redesign initiatives.",
         "achievements": [
-          "Built a digital queue system improving service flow and user management",
-          "Developed attendance tracking module for staff monitoring",
-          "Generated analytical reports for operational decision-making",
-          "Reduced manual processes and improved service organization"
+          "Led documentation of 34 institutional processes, producing 145 deliverables approved by the executive committee",
+          "Implemented a Scrum-based methodology organized into 5 phases and 8 sprints",
+          "Conducted an international benchmark of 12 universities, identifying 85 improvement opportunities and 48 best practices",
+          "Documented FinTech, MLOps, and IoT projects to support Software Engineering curriculum redesign"
         ],
         "tech": [
-          { "label": "Frontend", "items": ["React", "TypeScript"] },
-          { "label": "Backend", "items": ["Java", "Spring Boot"] },
-          { "label": "Database", "items": ["MySQL"] },
-          { "label": "Concepts", "items": ["System Design", "Real-time Data"] }
+          {
+            "label": "Methodologies",
+            "items": [
+              "Scrum",
+              "Agile"
+            ]
+          },
+          {
+            "label": "Analysis",
+            "items": [
+              "Process documentation",
+              "Benchmarking",
+              "Requirements analysis"
+            ]
+          }
         ]
       },
       {
         "company": "Comfamiliar Huila",
-        "role": "Systems & Process Analyst (Jr. Developer)",
+        "role": "Junior Software Engineer",
         "period": "Aug 2025 – Dec 2025",
         "duration": "5 months",
         "location": "Neiva, Colombia",
-        "description": "Analyzed and modernized legacy systems, improving data integrity, user experience, and internal workflows through structured technical documentation and cross-team collaboration.",
+        "description": "Participated in the modernization of a PHP-based enterprise system, supporting backend migration and frontend updates.",
         "achievements": [
-          "Diagnosed legacy systems and identified structural failures in critical modules",
-          "Improved data integrity and consistency across key operational systems",
-          "Documented modernization processes and system improvements",
-          "Collaborated with cross-functional teams to redesign UX and reduce access time"
+          "Participated in the modernization of a PHP-based enterprise system",
+          "Contributed to backend migration to Laravel LTS",
+          "Updated frontend modules using Angular LTS",
+          "Refactored Accounting and Reservations modules by removing obsolete components",
+          "Supported architectural improvements to increase system maintainability"
         ],
         "tech": [
-          { "label": "Backend", "items": ["PHP", "Laravel"] },
-          { "label": "Database", "items": ["MySQL"] },
-          { "label": "Concepts", "items": ["Legacy Systems", "Data Integrity", "System Refactoring"] }
+          {
+            "label": "Backend",
+            "items": [
+              "PHP",
+              "Laravel LTS"
+            ]
+          },
+          {
+            "label": "Frontend",
+            "items": [
+              "Angular LTS"
+            ]
+          },
+          {
+            "label": "Concepts",
+            "items": [
+              "Legacy systems",
+              "Refactoring",
+              "Maintainability"
+            ]
+          }
         ]
       },
       {
-        "company": "Biomédica S.A.S",
-        "role": "Information Systems & Support Engineer",
-        "period": "Mar 2024 – Nov 2024",
-        "duration": "8 months",
+        "company": "Universidad Surcolombiana",
+        "role": "University Intern",
+        "period": "Feb 2025 – Jul 2025",
+        "duration": "6 months",
         "location": "Neiva, Colombia",
-        "description": "Worked on information security, infrastructure organization, and data integrity, implementing automated backup systems and supporting internal digital platforms.",
+        "description": "Participated in requirements analysis and development of a user control and registration system for the University Court.",
         "achievements": [
-          "Designed automated backup system for sensitive financial data",
-          "Improved data integrity, confidentiality, and availability",
-          "Supported implementation of cybersecurity practices",
-          "Organized internal network infrastructure and structured cabling",
-          "Managed and updated institutional websites"
+          "Participated in institutional requirements analysis for a user control and registration system",
+          "Implemented a queue management system to improve organization and traceability of visitor intake",
+          "Produced statistical reports on user flow and staff attendance",
+          "Supported the organization and control of institutional information through technology"
         ],
         "tech": [
-          { "label": "Infrastructure", "items": ["Networking", "Structured Cabling"] },
-          { "label": "Security", "items": ["Backups", "Data Protection"] },
-          { "label": "Tools", "items": ["Web CMS", "Basic DevOps"] }
+          {
+            "label": "Competencies",
+            "items": [
+              "Requirements analysis",
+              "Systems development",
+              "Statistical reporting"
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Fleming Biomédica S.A.S",
+        "role": "Software Engineer",
+        "period": "Mar 2024 – Nov 2024",
+        "duration": "9 months",
+        "location": "Colombia",
+        "description": "Developed automation solutions and supported infrastructure and internal systems administration.",
+        "achievements": [
+          "Developed an automated information backup system, reducing operational time from approximately 20 to 8 minutes per execution",
+          "Implemented IP allowlists to strengthen enterprise security",
+          "Participated in two internal MVPs for service-order management and biomedical equipment reporting",
+          "Created technical documentation and operational manuals to support system continuity",
+          "Managed technology infrastructure and supported internal systems"
+        ],
+        "tech": [
+          {
+            "label": "Competencies",
+            "items": [
+              "Automation",
+              "Security",
+              "Infrastructure",
+              "Technical documentation"
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Freelance",
+        "role": "Full Stack Developer",
+        "period": "Apr 2023 – Present",
+        "duration": "Present",
+        "location": "Remote",
+        "description": "Develop web and e-commerce solutions for clients, participating directly in requirements gathering, development, deployment, and maintenance.",
+        "achievements": [
+          "Develop web applications using Laravel, PHP, React, and Angular",
+          "Build e-commerce solutions with Shopify and WooCommerce",
+          "Develop and integrate REST APIs and third-party services",
+          "Automate processes using n8n and integrate Artificial Intelligence tools",
+          "Optimize technical SEO, Core Web Vitals, and web performance",
+          "Administer Linux servers and production deployments",
+          "Communicate directly with clients for requirements gathering, project follow-up, and delivery"
+        ],
+        "tech": [
+          {
+            "label": "Backend",
+            "items": [
+              "Laravel",
+              "PHP",
+              "Python",
+              "REST APIs"
+            ]
+          },
+          {
+            "label": "Frontend",
+            "items": [
+              "React",
+              "Angular",
+              "JavaScript",
+              "TypeScript",
+              "HTML",
+              "CSS",
+              "Tailwind CSS"
+            ]
+          },
+          {
+            "label": "DevOps",
+            "items": [
+              "Git",
+              "GitHub",
+              "Linux",
+              "Docker",
+              "Postman",
+              "n8n"
+            ]
+          },
+          {
+            "label": "E-commerce",
+            "items": [
+              "Shopify",
+              "WooCommerce"
+            ]
+          }
         ]
       }
     ]
   },
   "checkExperience": {
-  "viewDetails": "View details",
-  "hideDetails": "Hide details"
+    "viewDetails": "View details",
+    "hideDetails": "Hide details"
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Have an idea or project? Let's talk.",
+    "subtitle": "Have an opportunity, idea, or project? Let's talk.",
     "letsConnect": "Let's connect",
-    "description": "I'm currently available for new opportunities. If you have a project, an idea, or just want to say hi, feel free to reach out.",
+    "description": "I'm currently open to opportunities as a Junior Backend Developer or Junior Full Stack Developer, including remote work and relocation.",
     "directContact": "Direct contact",
     "socialLinks": "Social links",
     "form": {
@@ -218,13 +343,13 @@
       "email": "Email",
       "emailPlaceholder": "your@email.com",
       "message": "Message",
-      "messagePlaceholder": "Tell me about your project...",
+      "messagePlaceholder": "Tell me about the opportunity or project...",
       "sendMessage": "Send message",
       "messageSent": "Message sent"
     }
   },
   "footer": {
-    "role": "Software developer based in Colombia",
+    "role": "Backend & Full Stack Developer · Colombia",
     "quickLinks": "Quick links",
     "connect": "Connect",
     "copyright": "All rights reserved.",
