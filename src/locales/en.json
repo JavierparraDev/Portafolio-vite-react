@@ -20,9 +20,14 @@
     "viewProjects": "View projects",
     "contactMe": "Let's work together",
     "downloadCV": "Download CV",
-    "scrollDown": "Explore"
+    "scrollDown": "Explore",
+    "eyebrow": "// 00 · HOME",
+    "terminalCommand": "build: software engineer",
+    "terminalHint": "Software Engineer · Backend & Full Stack",
+    "terminalLive": "available for opportunities"
   },
   "home": {
+    "eyebrow": "// 01 · ABOUT ME",
     "aboutTitle": "About me",
     "aboutSubtitle": "Software Engineer focused on Backend and Full Stack development.",
     "aboutDescription": "I'm a Software Engineer based in Colombia with experience in Backend and Full Stack development, legacy system modernization, process automation, REST APIs, web applications, and e-commerce solutions. I've worked with Laravel, PHP, Python, React, Angular, SQL, Shopify, and n8n, participating in requirements analysis, development, documentation, testing, deployment, and maintenance.",
@@ -53,6 +58,8 @@
   "projects": {
     "title": "Featured projects",
     "subtitle": "Real-world solutions focused on process automation, system modernization, and better digital experiences.",
+    "eyebrow": "// 02 · PORTFOLIO",
+    "countLabel": "case studies",
     "theProblem": "Problem",
     "theSolution": "Solution",
     "myRole": "My role",
@@ -61,6 +68,8 @@
     "completed": "Completed",
     "inProduction": "In production",
     "featured": "Featured project",
+    "viewCaseStudy": "View case study",
+    "hideCaseStudy": "Hide case study",
     "cta": {
       "title": "Interested in working together?",
       "description": "I'm open to opportunities as a Junior Backend Developer or Junior Full Stack Developer.",
@@ -107,11 +116,29 @@
         "seo": "Technical SEO and Core Web Vitals improvements",
         "ecommerce": "Development and optimization of e-commerce platforms"
       }
+    },
+    "aiEyeAnalysis": {
+      "title": "AI Eye Analysis",
+      "subtitle": "Ocular image analysis system using computer vision and Deep Learning",
+      "overview": "Developed a Deep Learning-based system for ocular image analysis, detecting and classifying pathologies in real time as a medical diagnosis support tool.",
+      "problem": "Manual review of ocular images was time-consuming, prone to human error, and did not scale to the volume of medical cases.",
+      "solution": "Built a computer vision system using YOLO and Deep Learning models trained on over 50 thousand images, with an integration API for real-time analysis.",
+      "role": "Software Engineer responsible for model training, integration API development, and deployment of the analysis system.",
+      "impact": {
+        "realTimeAnalysis": "Real-time analysis",
+        "aiImplementation": "50K+ images processed",
+        "medicalSupport": "Medical diagnosis support",
+        "innovation": "AI-based system"
+      }
     }
   },
   "experience": {
     "title": "Professional experience",
     "subtitle": "Experience in software development, system modernization, automation, and process analysis.",
+    "eyebrow": "// 03 · CAREER",
+    "statsRoles": "roles",
+    "statsActive": "active roles",
+    "statsLocations": "locations",
     "featured": "Featured",
     "keyAchievements": "Key achievements",
     "techStack": "Stack & competencies",
@@ -217,7 +244,7 @@
         ]
       },
       {
-        "company": "Universidad Surcolombiana",
+        "company": "University Court - Universidad Surcolombiana",
         "role": "University Intern",
         "period": "Feb 2025 – Jul 2025",
         "duration": "6 months",
@@ -330,9 +357,23 @@
     "viewDetails": "View details",
     "hideDetails": "Hide details"
   },
+  "education": {
+    "title": "Education",
+    "eyebrow": "// EDUCATION",
+    "degree": "Software Engineer",
+    "school": "Universidad Surcolombiana",
+    "year": "Graduated, 2026"
+  },
+  "languages": {
+    "title": "Languages",
+    "eyebrow": "// LANGUAGES",
+    "spanish": "Spanish — Native",
+    "english": "English — A2 (technical reading)"
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "Have an opportunity, idea, or project? Let's talk.",
+    "eyebrow": "// 04 · CONTACT",
     "letsConnect": "Let's connect",
     "description": "I'm currently open to opportunities as a Junior Backend Developer or Junior Full Stack Developer, including remote work and relocation.",
     "directContact": "Direct contact",

@@ -20,9 +20,14 @@
     "viewProjects": "Ver proyectos",
     "contactMe": "Trabajemos juntos",
     "downloadCV": "Descargar CV",
-    "scrollDown": "Explorar"
+    "scrollDown": "Explorar",
+    "eyebrow": "// 00 · INICIO",
+    "terminalCommand": "build: software engineer",
+    "terminalHint": "Ingeniero de Software · Backend & Full Stack",
+    "terminalLive": "disponible para oportunidades"
   },
   "home": {
+    "eyebrow": "// 01 · SOBRE MÍ",
     "aboutTitle": "Sobre mí",
     "aboutSubtitle": "Ingeniero de Software enfocado en Backend y desarrollo Full Stack.",
     "aboutDescription": "Soy Ingeniero de Software en Colombia con experiencia en desarrollo Backend y Full Stack, modernización de sistemas legacy, automatización de procesos, APIs REST, aplicaciones web y soluciones e-commerce. He trabajado con Laravel, PHP, Python, React, Angular, SQL, Shopify y n8n, participando en análisis, desarrollo, documentación, pruebas, despliegue y mantenimiento.",
@@ -53,6 +58,8 @@
   "projects": {
     "title": "Proyectos destacados",
     "subtitle": "Soluciones reales orientadas a automatizar procesos, modernizar sistemas y mejorar experiencias digitales.",
+    "eyebrow": "// 02 · PORTAFOLIO",
+    "countLabel": "casos de estudio",
     "theProblem": "Problema",
     "theSolution": "Solución",
     "myRole": "Mi rol",
@@ -61,6 +68,8 @@
     "completed": "Finalizado",
     "inProduction": "En producción",
     "featured": "Proyecto destacado",
+    "viewCaseStudy": "Ver caso de estudio",
+    "hideCaseStudy": "Ocultar caso de estudio",
     "cta": {
       "title": "¿Te interesa trabajar conmigo?",
       "description": "Estoy abierto a oportunidades como Backend Developer Junior o Full Stack Developer Junior.",
@@ -107,11 +116,29 @@
         "seo": "Mejoras de SEO técnico y Core Web Vitals",
         "ecommerce": "Desarrollo y optimización de plataformas e-commerce"
       }
+    },
+    "aiEyeAnalysis": {
+      "title": "AI Eye Analysis",
+      "subtitle": "Sistema de análisis de imágenes oculares con visión por computadora y Deep Learning",
+      "overview": "Desarrollé un sistema basado en Deep Learning para el análisis de imágenes oculares, permitiendo detectar y clasificar patologías en tiempo real como apoyo al diagnóstico médico.",
+      "problem": "La revisión manual de imágenes oculares requería mucho tiempo, estaba sujeta a error humano y no escalaba al volumen de casos médicos.",
+      "solution": "Construí un sistema de visión por computadora con YOLO y modelos de Deep Learning entrenados sobre más de 50 mil imágenes, con una API de integración para análisis en tiempo real.",
+      "role": "Ingeniero de Software encargado del entrenamiento del modelo, desarrollo de la API de integración y despliegue del sistema de análisis.",
+      "impact": {
+        "realTimeAnalysis": "Análisis en tiempo real",
+        "aiImplementation": "Más de 50 mil imágenes procesadas",
+        "medicalSupport": "Soporte al diagnóstico médico",
+        "innovation": "Sistema basado en Inteligencia Artificial"
+      }
     }
   },
   "experience": {
     "title": "Experiencia profesional",
     "subtitle": "Experiencia en desarrollo de software, modernización de sistemas, automatización y análisis de procesos.",
+    "eyebrow": "// 03 · TRAYECTORIA",
+    "statsRoles": "roles",
+    "statsActive": "posiciones activas",
+    "statsLocations": "ubicaciones",
     "featured": "Destacado",
     "keyAchievements": "Logros clave",
     "techStack": "Stack y competencias",
@@ -125,8 +152,8 @@
       {
         "company": "Institución San Rafael Arcángel",
         "role": "Docente de Informática",
-        "period": "Mar 2026 – Actualidad",
-        "duration": "Actualidad",
+        "period": "Mar 2026 – Agost 2026",
+        "duration": "6 meses",
         "location": "Colombia",
         "featured": true,
         "description": "Fortalezco el pensamiento lógico y computacional mediante fundamentos de programación y tecnologías digitales.",
@@ -217,7 +244,7 @@
         ]
       },
       {
-        "company": "Universidad Surcolombiana",
+        "company": "Juzgado Universitario - Universidad Surcolombiana",
         "role": "Practicante Universitario",
         "period": "Feb 2025 – Jul 2025",
         "duration": "6 meses",
@@ -330,9 +357,23 @@
     "viewDetails": "Ver detalles",
     "hideDetails": "Ocultar detalles"
   },
+  "education": {
+    "title": "Formación académica",
+    "eyebrow": "// FORMACIÓN",
+    "degree": "Ingeniero de Software",
+    "school": "Universidad Surcolombiana",
+    "year": "Graduado, 2026"
+  },
+  "languages": {
+    "title": "Idiomas",
+    "eyebrow": "// IDIOMAS",
+    "spanish": "Español — Nativo",
+    "english": "Inglés — A2 (lectura técnica)"
+  },
   "contact": {
     "title": "Contacto",
     "subtitle": "¿Tienes una oportunidad, idea o proyecto? Hablemos.",
+    "eyebrow": "// 04 · CONTACTO",
     "letsConnect": "Conectemos",
     "description": "Actualmente estoy abierto a oportunidades como Backend Developer Junior o Full Stack Developer Junior, incluyendo trabajo remoto y reubicación.",
     "directContact": "Contacto directo",

@@ -2,9 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { EMAIL, WHATSAPP_NUMBER } from '../../constants';
+import { EMAIL,} from '../../constants';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -28,14 +27,6 @@ const Footer = () => {
       borderColor: 'border-gray-300 hover:border-blue-500 dark:border-gray-700 dark:hover:border-blue-500',
       iconColor: 'text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white'
     },
-    {
-      name: 'WhatsApp',
-      icon: FaWhatsapp,
-      href: `https://wa.me/${WHATSAPP_NUMBER.replace('+', '')}`,
-      bgColor: 'bg-gray-100 hover:bg-green-50 dark:bg-gray-800 dark:hover:bg-green-600',
-      borderColor: 'border-gray-300 hover:border-green-500 dark:border-gray-700 dark:hover:border-green-500',
-      iconColor: 'text-gray-600 hover:text-green-600 dark:text-gray-400 dark:hover:text-white'
-    }
   ];
 
   const copyEmail = async () => {
