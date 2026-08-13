@@ -16,6 +16,7 @@ import {
   Briefcase,
   ExternalLink
 } from 'lucide-react';
+import Seo from '../components/Seo';
 
 interface Experience {
   company: string;
@@ -96,6 +97,7 @@ const Experience = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo title={t('seo.experience.title')} description={t('seo.experience.description')} path="/experiencia" />
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
         <motion.div

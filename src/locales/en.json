@@ -6,6 +6,32 @@
     "clickToCopy": "(click to copy)",
     "copied": "(copied!)"
   },
+  "seo": {
+    "home": {
+      "title": "Javier Parra | Backend & Full Stack Developer",
+      "description": "Software Engineer focused on Backend and Full Stack development, legacy system modernization, process automation, REST APIs, web applications, and e-commerce solutions."
+    },
+    "about": {
+      "title": "About | Javier Parra",
+      "description": "Software Engineer based in Colombia with experience in Backend and Full Stack development, legacy system modernization, process automation, REST APIs, and e-commerce solutions."
+    },
+    "projects": {
+      "title": "Projects | Javier Parra",
+      "description": "Real-world case studies: AI systems with Deep Learning, university ticketing system, business automation, and e-commerce store optimization."
+    },
+    "experience": {
+      "title": "Experience | Javier Parra",
+      "description": "Career as a Backend & Full Stack Developer: legacy system modernization, automation, process documentation, and web solutions."
+    },
+    "contact": {
+      "title": "Contact | Javier Parra",
+      "description": "Open to opportunities as a Backend Developer Junior or Full Stack Developer Junior, including remote work and relocation."
+    },
+    "notFound": {
+      "title": "Page not found | Javier Parra",
+      "description": "The page you are looking for does not exist."
+    }
+  },
   "nav": {
     "home": "Home",
     "about": "About",

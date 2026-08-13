@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://javierparradev.vercel.app/sitemap.xml

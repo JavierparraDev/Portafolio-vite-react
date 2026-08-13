@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowDown, Download, Github, Linkedin, Mail, Terminal } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Seo from '../components/Seo';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -60,6 +61,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo title={t('seo.home.title')} description={t('seo.home.description')} path="/" />
       {/* Hero */}
       <section className="relative min-h-screen overflow-hidden flex flex-col justify-center pt-16 pb-28">
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 w-full">
@@ -81,8 +83,10 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-50 animate-pulse"></div>
               <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden ring-2 ring-blue-500/50">
                 <img
-                  src="/javier-parra.png"
+                  src="/javier-parra.webp"
                   alt="Javier Parra"
+                  fetchPriority="high"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -6,6 +6,32 @@
     "clickToCopy": "(haz clic para copiar)",
     "copied": "(copiado!)"
   },
+  "seo": {
+    "home": {
+      "title": "Javier Parra | Backend & Full Stack Developer",
+      "description": "Ingeniero de Software enfocado en desarrollo Backend y Full Stack, modernización de sistemas legacy, automatización de procesos, APIs REST, aplicaciones web y soluciones e-commerce."
+    },
+    "about": {
+      "title": "Sobre mí | Javier Parra",
+      "description": "Ingeniero de Software en Colombia con experiencia en desarrollo Backend y Full Stack, modernización de sistemas legacy, automatización de procesos, APIs REST y soluciones e-commerce."
+    },
+    "projects": {
+      "title": "Proyectos | Javier Parra",
+      "description": "Casos de estudio reales: sistemas de IA con Deep Learning, digiturno universitario, automatización empresarial y optimización de tiendas e-commerce."
+    },
+    "experience": {
+      "title": "Experiencia | Javier Parra",
+      "description": "Trayectoria como Backend & Full Stack Developer: modernización de sistemas legacy, automatización, documentación de procesos y soluciones web."
+    },
+    "contact": {
+      "title": "Contacto | Javier Parra",
+      "description": "Abierto a oportunidades como Backend Developer Junior o Full Stack Developer Junior, incluyendo trabajo remoto y reubicación."
+    },
+    "notFound": {
+      "title": "Página no encontrada | Javier Parra",
+      "description": "La página que buscas no existe."
+    }
+  },
   "nav": {
     "home": "Inicio",
     "about": "Sobre mí",

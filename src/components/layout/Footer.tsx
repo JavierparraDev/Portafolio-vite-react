@@ -58,8 +58,10 @@ const Footer = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-lg opacity-50"></div>
                   <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-blue-500/30">
                     <img
-                      src="/javier-parra.png"
+                      src="/javier-parra.webp"
                       alt="Javier Parra"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </div>

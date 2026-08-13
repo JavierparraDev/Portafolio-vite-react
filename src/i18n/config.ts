@@ -10,6 +10,11 @@ const resources = {
   es: { translation: es }
 };
 
+const applyDocumentLang = (lang: string) => {
+  const normalized = lang.startsWith('es') ? 'es' : lang.startsWith('en') ? 'en' : 'es';
+  document.documentElement.lang = normalized;
+};
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -27,5 +32,8 @@ i18n
       lookupLocalStorage: 'language'
     }
   });
+
+i18n.on('languageChanged', applyDocumentLang);
+applyDocumentLang(i18n.language);
 
 export default i18n;

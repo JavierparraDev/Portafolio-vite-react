@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import WhatsAppIcon from './icons/WhatsAppIcon';
 import { WHATSAPP_NUMBER } from '../constants';
 
 const WhatsAppButton = () => {
@@ -44,7 +44,7 @@ const WhatsAppButton = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-        <FaWhatsapp className="w-7 h-7" />
+        <WhatsAppIcon className="w-7 h-7" />
       </motion.button>
     </div>
   );

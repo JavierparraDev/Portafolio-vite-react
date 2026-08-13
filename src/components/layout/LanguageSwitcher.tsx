@@ -4,12 +4,13 @@ import { Globe } from 'lucide-react';
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
+  const currentLang = (i18n.language || 'en').startsWith('es') ? 'es' : 'en';
+
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'es' : 'en';
+    const newLang = currentLang === 'en' ? 'es' : 'en';
     i18n.changeLanguage(newLang);
   };
 
-  const currentLang = i18n.language || 'en';
   const langLabel = currentLang === 'en' ? 'ES' : 'EN';
 
   return (

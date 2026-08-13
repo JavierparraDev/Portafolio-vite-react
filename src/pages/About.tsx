@@ -16,7 +16,7 @@ import {
   GraduationCap,
   Languages
 } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+import Seo from '../components/Seo';
 
 const About = () => {
   const { t } = useTranslation();
@@ -86,10 +86,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>{t('home.aboutTitle')} | Javier Parra - {t('hero.role')}</title>
-        <meta name="description" content={t('home.aboutSubtitle')} />
-      </Helmet>
+      <Seo title={t('seo.about.title')} description={t('seo.about.description')} path="/sobre-mi" />
 
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
@@ -135,8 +132,10 @@ const About = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-xl opacity-50"></div>
                   <div className="relative w-32 h-32 rounded-full overflow-hidden ring-2 ring-blue-500/50">
                     <img
-                      src="/javier-parra.png"
+                      src="/javier-parra.webp"
                       alt="Javier Parra"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </div>

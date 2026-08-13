@@ -1,9 +1,16 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import LanguageSwitcher from './LanguageSwitcher';
+
+const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+  `transition-colors duration-200 font-medium ${
+    isActive
+      ? 'text-blue-600 dark:text-blue-400'
+      : 'text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400'
+  }`;
 
 const Header = () => {
   const { t } = useTranslation();
@@ -51,8 +58,9 @@ const Header = () => {
               className="w-8 h-8 rounded-lg overflow-hidden"
             >
               <img
-                src="/javier-parra.png"
+                src="/javier-parra.webp"
                 alt="Javier Parra"
+                decoding="async"
                 className="w-full h-full rounded-full object-cover"
                /> 
                
@@ -61,16 +69,16 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav aria-label={t('nav.home')} className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.name}
                 to={item.href}
                 onClick={scrollToTop}
-                className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
+                className={navLinkClass}
               >
                 {item.name}
-              </Link>
+              </NavLink>
             ))}
           </nav>
 
@@ -107,19 +115,19 @@ const Header = () => {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden py-4 border-t border-gray-200 dark:border-gray-800"
           >
-            <nav className="flex flex-col space-y-4">
+            <nav aria-label={t('nav.home')} className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <Link
+                <NavLink
                   key={item.name}
                   to={item.href}
                   onClick={() => {
                     setIsMenuOpen(false);
                     scrollToTop();
                   }}
-                  className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
+                  className={navLinkClass}
                 >
                   {item.name}
-                </Link>
+                </NavLink>
               ))}
             </nav>
           </motion.div>

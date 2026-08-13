@@ -17,6 +17,7 @@ import {
   Sparkles,
   ExternalLink
 } from 'lucide-react';
+import Seo from '../components/Seo';
 
 interface ImpactMetric {
   key: string;
@@ -238,6 +239,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo title={t('seo.projects.title')} description={t('seo.projects.description')} path="/proyectos" />
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
         <motion.div

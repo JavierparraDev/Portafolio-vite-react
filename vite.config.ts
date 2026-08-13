@@ -1,18 +1,10 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import * as path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-      '@/components': path.resolve(__dirname, './src/components'),
-      '@/pages': path.resolve(__dirname, './src/pages'),
-      '@/assets': path.resolve(__dirname, './src/assets'),
-    },
-  },
   server: {
     port: 5173,
     open: true, // Abre automáticamente el navegador
@@ -33,5 +25,12 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom', 'framer-motion'],
+  },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: ['./src/test/setup.ts'],
+    css: false,
+    include: ['src/**/*.{test,spec}.{ts,tsx}'],
   },
 })

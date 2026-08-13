@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { Github, Linkedin, Mail, Send, Check, MapPin, Terminal } from 'lucide-react';
-import { FaWhatsapp } from 'react-icons/fa';
+import WhatsAppIcon from '../components/icons/WhatsAppIcon';
 import { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import Seo from '../components/Seo';
 import { EMAIL, WHATSAPP_NUMBER } from '../constants';
 
 const socialLinks = [
@@ -25,7 +25,7 @@ const socialLinks = [
   },
   {
     name: 'WhatsApp',
-    icon: FaWhatsapp,
+    icon: WhatsAppIcon,
     href: `https://wa.me/${WHATSAPP_NUMBER.replace('+', '')}`,
     bgColor: 'bg-gray-100 hover:bg-green-50 dark:bg-gray-800 dark:hover:bg-green-600',
     borderColor: 'border-gray-300 hover:border-green-500 dark:border-gray-700 dark:hover:border-green-500',
@@ -84,10 +84,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>{t('contact.title')} | Javier Parra - {t('hero.role')}</title>
-        <meta name="description" content={t('contact.description')} />
-      </Helmet>
+      <Seo title={t('seo.contact.title')} description={t('seo.contact.description')} path="/contacto" />
 
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
