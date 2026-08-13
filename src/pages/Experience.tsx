@@ -95,15 +95,9 @@ const Experience = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
+    <div className="min-h-screen">
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.04)_1px,transparent_1px)] bg-[size:56px_56px]"></div>
-          <div className="absolute -top-20 left-1/4 w-[480px] h-[480px] bg-blue-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-[480px] h-[480px] bg-cyan-500/10 rounded-full blur-3xl"></div>
-        </div>
-
         <motion.div
           className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8"
           initial="hidden"
@@ -348,7 +342,7 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="relative overflow-hidden rounded-3xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900/80 dark:to-gray-950 p-10 md:p-14"
+            className="relative overflow-hidden rounded-3xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-gray-100/90 to-white/80 dark:from-gray-900/80 dark:to-gray-950/70 backdrop-blur-xl p-10 md:p-14"
           >
             <div className="absolute -top-20 left-1/3 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
             <div className="relative z-10">

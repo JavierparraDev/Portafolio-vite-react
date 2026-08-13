@@ -83,7 +83,7 @@ const Contact = () => {
     'w-full px-4 py-3 bg-white dark:bg-gray-800/50 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none transition-colors';
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
+    <div className="min-h-screen">
       <Helmet>
         <title>{t('contact.title')} | Javier Parra - {t('hero.role')}</title>
         <meta name="description" content={t('contact.description')} />
@@ -91,12 +91,6 @@ const Contact = () => {
 
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.04)_1px,transparent_1px)] bg-[size:56px_56px]"></div>
-          <div className="absolute -top-20 left-1/4 w-[480px] h-[480px] bg-blue-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-[480px] h-[480px] bg-cyan-500/10 rounded-full blur-3xl"></div>
-        </div>
-
         <motion.div
           className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8"
           initial="hidden"
@@ -139,7 +133,7 @@ const Contact = () => {
       <section className="pb-24">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <motion.div
-            className="relative overflow-hidden bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-3xl p-6 md:p-10"
+            className="relative overflow-hidden bg-white/90 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-3xl p-6 md:p-10 backdrop-blur-xl"
             variants={itemVariants}
           >
             <div className="absolute -top-24 -right-24 w-72 h-72 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>

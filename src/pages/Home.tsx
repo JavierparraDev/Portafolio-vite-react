@@ -61,13 +61,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="relative min-h-screen bg-gray-50 dark:bg-gray-950 overflow-hidden flex flex-col justify-center pt-16 pb-28">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.04)_1px,transparent_1px)] bg-[size:56px_56px]"></div>
-          <div className="absolute top-1/4 left-1/4 w-[480px] h-[480px] bg-blue-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-[480px] h-[480px] bg-cyan-500/10 rounded-full blur-3xl"></div>
-        </div>
-
+      <section className="relative min-h-screen overflow-hidden flex flex-col justify-center pt-16 pb-28">
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 w-full">
           <motion.div
             variants={containerVariants}
@@ -240,7 +234,7 @@ const Home = () => {
       </section>
 
       {/* About + Skills */}
-      <section id="about" className="py-24 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900">
+      <section id="about" className="py-24">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
